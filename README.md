@@ -342,6 +342,18 @@ Current boundaries:
 - Random timing diversity uses constrained placement, variable budgets, and a shared placement shift; it is not an exhaustive independent placement search.
 - RAM latency, platform timing, host request management, and complete hardware integration remain the integrator's responsibility.
 
+## License
+
+Unless otherwise noted, the original source code, documentation, examples,
+and demo illustrations in this repository are licensed under the
+[MIT License](LICENSE).
+
+Copyright (c) 2026 Mingtse-Ma.
+
+Third-party materials remain subject to their respective licenses and
+copyright notices. References to Bosch M_TTCAN documentation do not grant
+rights to redistribute or relicense that documentation.
+
 ## References
 
 - [Bosch M_TTCAN User Manual, revision 3.3.0](https://www.bosch-semiconductors.com/media/ip_modules/pdf_2/m_can/mttcan_users_manual_v330.pdf)
