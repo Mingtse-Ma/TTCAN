@@ -1,0 +1,715 @@
+{
+  "columns": [
+    {
+      "column_index": 0,
+      "start_ntu": 0,
+      "end_ntu": 66
+    },
+    {
+      "column_index": 1,
+      "start_ntu": 66,
+      "end_ntu": 678
+    },
+    {
+      "column_index": 2,
+      "start_ntu": 678,
+      "end_ntu": 825
+    },
+    {
+      "column_index": 3,
+      "start_ntu": 825,
+      "end_ntu": 852
+    },
+    {
+      "column_index": 4,
+      "start_ntu": 852,
+      "end_ntu": 949
+    },
+    {
+      "column_index": 5,
+      "start_ntu": 949,
+      "end_ntu": 976
+    },
+    {
+      "column_index": 6,
+      "start_ntu": 976,
+      "end_ntu": 1098
+    },
+    {
+      "column_index": 7,
+      "start_ntu": 1098,
+      "end_ntu": 1125
+    },
+    {
+      "column_index": 8,
+      "start_ntu": 1125,
+      "end_ntu": 1192
+    },
+    {
+      "column_index": 9,
+      "start_ntu": 1192,
+      "end_ntu": 1222
+    },
+    {
+      "column_index": 10,
+      "start_ntu": 1222,
+      "end_ntu": 1321
+    },
+    {
+      "column_index": 11,
+      "start_ntu": 1321,
+      "end_ntu": 2621
+    },
+    {
+      "column_index": 12,
+      "start_ntu": 2621,
+      "end_ntu": 2623
+    }
+  ],
+  "rows": [
+    {
+      "cycle": 0,
+      "cells": [
+        {
+          "column_index": 0,
+          "start_ntu": 0,
+          "end_ntu": 66,
+          "window_id": "reference",
+          "kind": "reference",
+          "messages": [
+            "Reference"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 1,
+          "start_ntu": 66,
+          "end_ntu": 678,
+          "window_id": "free_0_66",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 2,
+          "start_ntu": 678,
+          "end_ntu": 825,
+          "window_id": "free_0_66",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 3,
+          "start_ntu": 825,
+          "end_ntu": 852,
+          "window_id": "free_0_66",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 4,
+          "start_ntu": 852,
+          "end_ntu": 949,
+          "window_id": "free_0_66",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 5,
+          "start_ntu": 949,
+          "end_ntu": 976,
+          "window_id": "free_0_66",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 6,
+          "start_ntu": 976,
+          "end_ntu": 1098,
+          "window_id": "Msg002_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg002"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 7,
+          "start_ntu": 1098,
+          "end_ntu": 1125,
+          "window_id": "Msg002_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg002"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 8,
+          "start_ntu": 1125,
+          "end_ntu": 1192,
+          "window_id": "free_0_1125",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 9,
+          "start_ntu": 1192,
+          "end_ntu": 1222,
+          "window_id": "free_0_1125",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 10,
+          "start_ntu": 1222,
+          "end_ntu": 1321,
+          "window_id": "ZArbi000",
+          "kind": "arbitration",
+          "messages": [
+            "Msg004"
+          ],
+          "nodes": [
+            "Node0"
+          ],
+          "group_id": "ZArbi000"
+        },
+        {
+          "column_index": 11,
+          "start_ntu": 1321,
+          "end_ntu": 2621,
+          "window_id": "free_0_1321",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 12,
+          "start_ntu": 2621,
+          "end_ntu": 2623,
+          "window_id": "free_0_1321",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        }
+      ]
+    },
+    {
+      "cycle": 1,
+      "cells": [
+        {
+          "column_index": 0,
+          "start_ntu": 0,
+          "end_ntu": 66,
+          "window_id": "reference",
+          "kind": "reference",
+          "messages": [
+            "Reference"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 1,
+          "start_ntu": 66,
+          "end_ntu": 678,
+          "window_id": "free_1_66",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 2,
+          "start_ntu": 678,
+          "end_ntu": 825,
+          "window_id": "Msg000_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg000"
+          ],
+          "nodes": [
+            "Node0"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 3,
+          "start_ntu": 825,
+          "end_ntu": 852,
+          "window_id": "Msg000_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg000"
+          ],
+          "nodes": [
+            "Node0"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 4,
+          "start_ntu": 852,
+          "end_ntu": 949,
+          "window_id": "Msg001_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg001"
+          ],
+          "nodes": [
+            "Node0"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 5,
+          "start_ntu": 949,
+          "end_ntu": 976,
+          "window_id": "Msg001_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg001"
+          ],
+          "nodes": [
+            "Node0"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 6,
+          "start_ntu": 976,
+          "end_ntu": 1098,
+          "window_id": "Msg002_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg002"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 7,
+          "start_ntu": 1098,
+          "end_ntu": 1125,
+          "window_id": "Msg002_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg002"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 8,
+          "start_ntu": 1125,
+          "end_ntu": 1192,
+          "window_id": "free_1_1125",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 9,
+          "start_ntu": 1192,
+          "end_ntu": 1222,
+          "window_id": "free_1_1125",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 10,
+          "start_ntu": 1222,
+          "end_ntu": 1321,
+          "window_id": "ZArbi000",
+          "kind": "arbitration",
+          "messages": [
+            "Msg004"
+          ],
+          "nodes": [
+            "Node0"
+          ],
+          "group_id": "ZArbi000"
+        },
+        {
+          "column_index": 11,
+          "start_ntu": 1321,
+          "end_ntu": 2621,
+          "window_id": "free_1_1321",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 12,
+          "start_ntu": 2621,
+          "end_ntu": 2623,
+          "window_id": "free_1_1321",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        }
+      ]
+    },
+    {
+      "cycle": 2,
+      "cells": [
+        {
+          "column_index": 0,
+          "start_ntu": 0,
+          "end_ntu": 66,
+          "window_id": "reference",
+          "kind": "reference",
+          "messages": [
+            "Reference"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 1,
+          "start_ntu": 66,
+          "end_ntu": 678,
+          "window_id": "free_2_66",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 2,
+          "start_ntu": 678,
+          "end_ntu": 825,
+          "window_id": "free_2_66",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 3,
+          "start_ntu": 825,
+          "end_ntu": 852,
+          "window_id": "free_2_66",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 4,
+          "start_ntu": 852,
+          "end_ntu": 949,
+          "window_id": "free_2_66",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 5,
+          "start_ntu": 949,
+          "end_ntu": 976,
+          "window_id": "free_2_66",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 6,
+          "start_ntu": 976,
+          "end_ntu": 1098,
+          "window_id": "Msg002_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg002"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 7,
+          "start_ntu": 1098,
+          "end_ntu": 1125,
+          "window_id": "Msg002_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg002"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 8,
+          "start_ntu": 1125,
+          "end_ntu": 1192,
+          "window_id": "free_2_1125",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 9,
+          "start_ntu": 1192,
+          "end_ntu": 1222,
+          "window_id": "free_2_1125",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 10,
+          "start_ntu": 1222,
+          "end_ntu": 1321,
+          "window_id": "ZArbi000",
+          "kind": "arbitration",
+          "messages": [
+            "Msg004"
+          ],
+          "nodes": [
+            "Node0"
+          ],
+          "group_id": "ZArbi000"
+        },
+        {
+          "column_index": 11,
+          "start_ntu": 1321,
+          "end_ntu": 2621,
+          "window_id": "free_2_1321",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 12,
+          "start_ntu": 2621,
+          "end_ntu": 2623,
+          "window_id": "free_2_1321",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        }
+      ]
+    },
+    {
+      "cycle": 3,
+      "cells": [
+        {
+          "column_index": 0,
+          "start_ntu": 0,
+          "end_ntu": 66,
+          "window_id": "reference",
+          "kind": "reference",
+          "messages": [
+            "Reference"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 1,
+          "start_ntu": 66,
+          "end_ntu": 678,
+          "window_id": "free_3_66",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 2,
+          "start_ntu": 678,
+          "end_ntu": 825,
+          "window_id": "Msg000_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg000"
+          ],
+          "nodes": [
+            "Node0"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 3,
+          "start_ntu": 825,
+          "end_ntu": 852,
+          "window_id": "Msg000_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg000"
+          ],
+          "nodes": [
+            "Node0"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 4,
+          "start_ntu": 852,
+          "end_ntu": 949,
+          "window_id": "Msg001_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg001"
+          ],
+          "nodes": [
+            "Node0"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 5,
+          "start_ntu": 949,
+          "end_ntu": 976,
+          "window_id": "Msg001_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg001"
+          ],
+          "nodes": [
+            "Node0"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 6,
+          "start_ntu": 976,
+          "end_ntu": 1098,
+          "window_id": "Msg002_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg002"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 7,
+          "start_ntu": 1098,
+          "end_ntu": 1125,
+          "window_id": "Msg002_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg002"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 8,
+          "start_ntu": 1125,
+          "end_ntu": 1192,
+          "window_id": "Msg003_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg003"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 9,
+          "start_ntu": 1192,
+          "end_ntu": 1222,
+          "window_id": "Msg003_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg003"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 10,
+          "start_ntu": 1222,
+          "end_ntu": 1321,
+          "window_id": "ZArbi000",
+          "kind": "arbitration",
+          "messages": [
+            "Msg004"
+          ],
+          "nodes": [
+            "Node0"
+          ],
+          "group_id": "ZArbi000"
+        },
+        {
+          "column_index": 11,
+          "start_ntu": 1321,
+          "end_ntu": 2621,
+          "window_id": "free_3_1321",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 12,
+          "start_ntu": 2621,
+          "end_ntu": 2623,
+          "window_id": "free_3_1321",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        }
+      ]
+    }
+  ]
+}

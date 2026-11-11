@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "resource_mode": "custom",
+  "controller_version": "3.3.0",
+  "node_count": [
+    2,
+    5
+  ],
+  "master_count": [
+    1,
+    2
+  ],
+  "messages_per_node": [
+    2,
+    3
+  ],
+  "matrix_cycles": [
+    4,
+    8,
+    16
+  ],
+  "basic_cycle_ntu": [
+    2400,
+    5000
+  ],
+  "bitrate_choices": [
+    500000,
+    1000000
+  ],
+  "tx_enable_ntu": [
+    2,
+    6
+  ],
+  "guard_ntu": [
+    10,
+    18
+  ],
+  "filter_delay_ntu": [
+    1,
+    6
+  ],
+  "min_trigger_spacing_ntu": [
+    1,
+    2
+  ],
+  "dlc": [
+    0,
+    8
+  ],
+  "receiver_count": [
+    1,
+    2
+  ],
+  "periods": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "frame_formats": [
+    "standard",
+    "extended"
+  ],
+  "extended_probability": 0.3,
+  "rx_check_probability": 0.6,
+  "explicit_number_probability": 0.5,
+  "repeat_probability": 0.3,
+  "shared_group_probability": 0.6,
+  "window_extra_ntu": [
+    5,
+    30
+  ],
+  "window_start_ntu": [
+    0,
+    65535
+  ],
+  "window_length_ntu": [
+    1,
+    65535
+  ],
+  "target_bus_load": [
+    0.0,
+    1.0
+  ],
+  "window_mix": {
+    "single": 0.5,
+    "arbitration": 0.2,
+    "merged": 0.3
+  },
+  "node_capacity": {
+    "tx_message_capacity": [
+      4,
+      16
+    ],
+    "rx_std_filter_capacity": [
+      4,
+      12
+    ],
+    "rx_ext_filter_capacity": [
+      4,
+      12
+    ],
+    "trigger_capacity": [
+      24,
+      48
+    ]
+  },
+  "required_features": [],
+  "allow_warnings": false,
+  "topology": null
+}

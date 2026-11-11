@@ -1,0 +1,461 @@
+{
+  "master_seed": "20261029",
+  "case_index": 0,
+  "case_seed": "2572431177825729830020499634692253363688270504826789757849481345094836770357",
+  "attempt": 0,
+  "attempt_seed": "86125177436897624244696364003336266528365462947144530154191963445383132888298",
+  "generator_version": "1.0.0",
+  "python_version": "3.12.14",
+  "scheduler_sha256": "01632dbc30417217dc3f140fb25606d49a0eb329d797c5f57115f05a3a440c96",
+  "options_sha256": "65e1c3783afee7126330e3a30859ef7ddf380ca971157bd8beba4e71ee165165",
+  "features": [
+    "arbitration",
+    "extended",
+    "merged",
+    "multi_node_arbitration",
+    "multiple_receivers",
+    "rx",
+    "single"
+  ],
+  "constraints": {
+    "node_count": [
+      2,
+      5
+    ],
+    "master_count": [
+      1,
+      2
+    ],
+    "messages_per_node": [
+      2,
+      3
+    ],
+    "matrix_cycles": [
+      4,
+      8,
+      16
+    ],
+    "basic_cycle_ntu": [
+      2400,
+      5000
+    ],
+    "periods": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "target_bus_load": [
+      0.0,
+      1.0
+    ],
+    "window_start_ntu": [
+      0,
+      65535
+    ],
+    "window_length_ntu": [
+      1,
+      65535
+    ]
+  },
+  "reproduce_command": "python ttcan_random_config.py --seed 20261029 --case-start 0 --count 1 --max-attempts 100 --options random_cases/run_20261029_icw2pf45/case_0000/generator_options.json --output-dir random_cases",
+  "success": true,
+  "retry_count": 0,
+  "attempt_failures": [],
+  "resolved_options": {
+    "schema_version": 1,
+    "resource_mode": "custom",
+    "controller_version": "3.3.0",
+    "node_count": [
+      2,
+      5
+    ],
+    "master_count": [
+      1,
+      2
+    ],
+    "messages_per_node": [
+      2,
+      3
+    ],
+    "matrix_cycles": [
+      4,
+      8,
+      16
+    ],
+    "basic_cycle_ntu": [
+      2400,
+      5000
+    ],
+    "bitrate_choices": [
+      500000,
+      1000000
+    ],
+    "tx_enable_ntu": [
+      2,
+      6
+    ],
+    "guard_ntu": [
+      10,
+      18
+    ],
+    "filter_delay_ntu": [
+      1,
+      6
+    ],
+    "min_trigger_spacing_ntu": [
+      1,
+      2
+    ],
+    "dlc": [
+      0,
+      8
+    ],
+    "receiver_count": [
+      1,
+      2
+    ],
+    "periods": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "frame_formats": [
+      "extended",
+      "standard"
+    ],
+    "extended_probability": 0.3,
+    "rx_check_probability": 0.6,
+    "explicit_number_probability": 0.5,
+    "repeat_probability": 0.3,
+    "shared_group_probability": 0.6,
+    "window_extra_ntu": [
+      5,
+      30
+    ],
+    "window_start_ntu": [
+      0,
+      65535
+    ],
+    "window_length_ntu": [
+      1,
+      65535
+    ],
+    "target_bus_load": [
+      0.0,
+      1.0
+    ],
+    "window_mix": {
+      "single": 0.5,
+      "arbitration": 0.2,
+      "merged": 0.3
+    },
+    "node_capacity": {
+      "tx_message_capacity": [
+        4,
+        16
+      ],
+      "rx_std_filter_capacity": [
+        4,
+        12
+      ],
+      "rx_ext_filter_capacity": [
+        4,
+        12
+      ],
+      "trigger_capacity": [
+        24,
+        48
+      ]
+    },
+    "required_features": [],
+    "allow_warnings": false,
+    "topology": null
+  },
+  "config_sha256": "019b39ddaa92da72ebd71d1fb983b2e349074d1e6790e31b4a6641cd333113c0",
+  "config_semantic_sha256": "a43e301b909de6f1d4358050214f1cb1f297d361847d97b6633c47c4facf6d59",
+  "core_signature": "262c942b503e6f14171a466c5258a43adc8435f66848b880d8d2f9ec1e588471",
+  "coverage": {
+    "features": [
+      "arbitration",
+      "extended",
+      "merged",
+      "multi_node_arbitration",
+      "multiple_receivers",
+      "rx",
+      "single"
+    ],
+    "node_count": 4,
+    "master_count": 1,
+    "message_count": 10,
+    "matrix_cycles": 8,
+    "basic_cycle_ntu": 3953,
+    "formats": {
+      "standard": 5,
+      "extended": 5
+    },
+    "dlcs": {
+      "2": 3,
+      "3": 2,
+      "4": 1,
+      "6": 2,
+      "5": 2
+    },
+    "periods": {
+      "2": 5,
+      "1": 3,
+      "8": 2
+    },
+    "logical_window_counts": {
+      "single": 6,
+      "arbitration": 1,
+      "merged": 1
+    },
+    "expanded_window_counts": {
+      "exclusive": 36,
+      "arbitration": 4,
+      "merged": 1
+    },
+    "window_mix": {
+      "single": {
+        "target_fraction": 0.5,
+        "actual_fraction": 0.75,
+        "logical_count": 6,
+        "difference": 0.25
+      },
+      "arbitration": {
+        "target_fraction": 0.2,
+        "actual_fraction": 0.125,
+        "logical_count": 1,
+        "difference": -0.07500000000000001
+      },
+      "merged": {
+        "target_fraction": 0.3,
+        "actual_fraction": 0.125,
+        "logical_count": 1,
+        "difference": -0.175
+      }
+    },
+    "data_window_reservation_fraction": 0.2062990134075386,
+    "global_time_shift_ntu": 1598,
+    "allocation_styles": {
+      "automatic_rx": 9,
+      "explicit_rx": 9,
+      "automatic_tx": 4,
+      "explicit_tx": 6
+    },
+    "node_resources": {
+      "Node0": {
+        "tx_buffer": {
+          "used": 2,
+          "capacity": 8,
+          "remaining": 6
+        },
+        "rx_std_filter": {
+          "used": 2,
+          "capacity": 6,
+          "remaining": 4
+        },
+        "rx_ext_filter": {
+          "used": 5,
+          "capacity": 11,
+          "remaining": 6
+        },
+        "trigger_memory": {
+          "used": 5,
+          "capacity": 48,
+          "remaining": 43
+        },
+        "expected_data_tx_triggers_per_matrix": 8
+      },
+      "Node1": {
+        "tx_buffer": {
+          "used": 3,
+          "capacity": 8,
+          "remaining": 5
+        },
+        "rx_std_filter": {
+          "used": 3,
+          "capacity": 9,
+          "remaining": 6
+        },
+        "rx_ext_filter": {
+          "used": 0,
+          "capacity": 7,
+          "remaining": 7
+        },
+        "trigger_memory": {
+          "used": 6,
+          "capacity": 25,
+          "remaining": 19
+        },
+        "expected_data_tx_triggers_per_matrix": 20
+      },
+      "Node3": {
+        "tx_buffer": {
+          "used": 3,
+          "capacity": 7,
+          "remaining": 4
+        },
+        "rx_std_filter": {
+          "used": 2,
+          "capacity": 9,
+          "remaining": 7
+        },
+        "rx_ext_filter": {
+          "used": 1,
+          "capacity": 10,
+          "remaining": 9
+        },
+        "trigger_memory": {
+          "used": 5,
+          "capacity": 45,
+          "remaining": 40
+        },
+        "expected_data_tx_triggers_per_matrix": 16
+      },
+      "Node2": {
+        "tx_buffer": {
+          "used": 2,
+          "capacity": 12,
+          "remaining": 10
+        },
+        "rx_std_filter": {
+          "used": 2,
+          "capacity": 9,
+          "remaining": 7
+        },
+        "rx_ext_filter": {
+          "used": 3,
+          "capacity": 11,
+          "remaining": 8
+        },
+        "trigger_memory": {
+          "used": 6,
+          "capacity": 45,
+          "remaining": 39
+        },
+        "expected_data_tx_triggers_per_matrix": 2
+      }
+    }
+  },
+  "scheduler_validation": {
+    "valid": true,
+    "errors": 0,
+    "warnings": 0,
+    "issues": [],
+    "resources": {
+      "Node0": {
+        "tx_buffer": {
+          "used": 2,
+          "capacity": 8,
+          "remaining": 6
+        },
+        "rx_std_filter": {
+          "used": 2,
+          "capacity": 6,
+          "remaining": 4
+        },
+        "rx_ext_filter": {
+          "used": 5,
+          "capacity": 11,
+          "remaining": 6
+        },
+        "trigger_memory": {
+          "used": 5,
+          "capacity": 48,
+          "remaining": 43
+        },
+        "expected_data_tx_triggers_per_matrix": 8
+      },
+      "Node1": {
+        "tx_buffer": {
+          "used": 3,
+          "capacity": 8,
+          "remaining": 5
+        },
+        "rx_std_filter": {
+          "used": 3,
+          "capacity": 9,
+          "remaining": 6
+        },
+        "rx_ext_filter": {
+          "used": 0,
+          "capacity": 7,
+          "remaining": 7
+        },
+        "trigger_memory": {
+          "used": 6,
+          "capacity": 25,
+          "remaining": 19
+        },
+        "expected_data_tx_triggers_per_matrix": 20
+      },
+      "Node3": {
+        "tx_buffer": {
+          "used": 3,
+          "capacity": 7,
+          "remaining": 4
+        },
+        "rx_std_filter": {
+          "used": 2,
+          "capacity": 9,
+          "remaining": 7
+        },
+        "rx_ext_filter": {
+          "used": 1,
+          "capacity": 10,
+          "remaining": 9
+        },
+        "trigger_memory": {
+          "used": 5,
+          "capacity": 45,
+          "remaining": 40
+        },
+        "expected_data_tx_triggers_per_matrix": 16
+      },
+      "Node2": {
+        "tx_buffer": {
+          "used": 2,
+          "capacity": 12,
+          "remaining": 10
+        },
+        "rx_std_filter": {
+          "used": 2,
+          "capacity": 9,
+          "remaining": 7
+        },
+        "rx_ext_filter": {
+          "used": 3,
+          "capacity": 11,
+          "remaining": 8
+        },
+        "trigger_memory": {
+          "used": 6,
+          "capacity": 45,
+          "remaining": 39
+        },
+        "expected_data_tx_triggers_per_matrix": 2
+      }
+    },
+    "timing_model": "Static Level 1 reservation model; no bus arbitration or clock synchronization simulation",
+    "hardware_export": false,
+    "units": {
+      "time": "NTU",
+      "ntu_ns": 2000
+    }
+  },
+  "model_limitations": [
+    "Static Level 1 scheduling model",
+    "Arbitration outcomes are not simulated",
+    "Merged and Arbitration messages do not receive Rx checks in this scheduler"
+  ],
+  "protocol_conformance_claim": false
+}

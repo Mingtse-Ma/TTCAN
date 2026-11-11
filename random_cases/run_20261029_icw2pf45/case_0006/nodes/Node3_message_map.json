@@ -1,0 +1,42 @@
+[
+  {
+    "message_name": "Msg000",
+    "can_id": "0x7195AC",
+    "direction": "rx",
+    "resource_type": "rx_ext_filter",
+    "mnr": 0,
+    "peer": "Node1"
+  },
+  {
+    "message_name": "Msg003",
+    "can_id": "0x68A",
+    "direction": "rx",
+    "resource_type": "rx_std_filter",
+    "mnr": 0,
+    "peer": "Node0"
+  },
+  {
+    "message_name": "Msg007",
+    "can_id": "0x17D",
+    "direction": "rx",
+    "resource_type": "rx_std_filter",
+    "mnr": 7,
+    "peer": "Node2"
+  },
+  {
+    "message_name": "Msg008",
+    "can_id": "0x1AE",
+    "direction": "tx",
+    "resource_type": "tx_buffer",
+    "mnr": 13,
+    "peer": "Node1,Node2"
+  },
+  {
+    "message_name": "Msg009",
+    "can_id": "0x1F60B26A",
+    "direction": "tx",
+    "resource_type": "tx_buffer",
+    "mnr": 4,
+    "peer": "Node1,Node2"
+  }
+]

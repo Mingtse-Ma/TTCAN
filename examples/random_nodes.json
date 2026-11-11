@@ -1,0 +1,29 @@
+{
+  "network": {
+    "actual_master": "NodeA"
+  },
+  "node_defaults": {
+    "tx_message_capacity": 8,
+    "rx_std_filter_capacity": 12,
+    "rx_ext_filter_capacity": 8,
+    "trigger_capacity": 32
+  },
+  "nodes": [
+    {
+      "node_id": "NodeA",
+      "node_name": "NodeA",
+      "role": "master",
+      "master_priority": 0
+    },
+    {
+      "node_id": "NodeB",
+      "node_name": "NodeB",
+      "role": "slave"
+    },
+    {
+      "node_id": "NodeC",
+      "node_name": "NodeC",
+      "role": "slave"
+    }
+  ]
+}

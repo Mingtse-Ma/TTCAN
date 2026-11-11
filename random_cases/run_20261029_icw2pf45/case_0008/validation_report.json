@@ -1,0 +1,83 @@
+{
+  "valid": true,
+  "errors": 0,
+  "warnings": 0,
+  "issues": [],
+  "resources": {
+    "Node0": {
+      "tx_buffer": {
+        "used": 3,
+        "capacity": 9,
+        "remaining": 6
+      },
+      "rx_std_filter": {
+        "used": 2,
+        "capacity": 6,
+        "remaining": 4
+      },
+      "rx_ext_filter": {
+        "used": 1,
+        "capacity": 5,
+        "remaining": 4
+      },
+      "trigger_memory": {
+        "used": 6,
+        "capacity": 32,
+        "remaining": 26
+      },
+      "expected_data_tx_triggers_per_matrix": 6
+    },
+    "Node1": {
+      "tx_buffer": {
+        "used": 3,
+        "capacity": 6,
+        "remaining": 3
+      },
+      "rx_std_filter": {
+        "used": 5,
+        "capacity": 6,
+        "remaining": 1
+      },
+      "rx_ext_filter": {
+        "used": 0,
+        "capacity": 6,
+        "remaining": 6
+      },
+      "trigger_memory": {
+        "used": 5,
+        "capacity": 42,
+        "remaining": 37
+      },
+      "expected_data_tx_triggers_per_matrix": 5
+    },
+    "Node2": {
+      "tx_buffer": {
+        "used": 3,
+        "capacity": 13,
+        "remaining": 10
+      },
+      "rx_std_filter": {
+        "used": 4,
+        "capacity": 10,
+        "remaining": 6
+      },
+      "rx_ext_filter": {
+        "used": 2,
+        "capacity": 9,
+        "remaining": 7
+      },
+      "trigger_memory": {
+        "used": 6,
+        "capacity": 41,
+        "remaining": 35
+      },
+      "expected_data_tx_triggers_per_matrix": 3
+    }
+  },
+  "timing_model": "Static Level 1 reservation model; no bus arbitration or clock synchronization simulation",
+  "hardware_export": false,
+  "units": {
+    "time": "NTU",
+    "ntu_ns": 1000
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "valid": true,
+  "errors": 0,
+  "warnings": 0,
+  "issues": [],
+  "resources": {
+    "Node0": {
+      "tx_buffer": {
+        "used": 2,
+        "capacity": 13,
+        "remaining": 11
+      },
+      "rx_std_filter": {
+        "used": 3,
+        "capacity": 12,
+        "remaining": 9
+      },
+      "rx_ext_filter": {
+        "used": 2,
+        "capacity": 9,
+        "remaining": 7
+      },
+      "trigger_memory": {
+        "used": 3,
+        "capacity": 35,
+        "remaining": 32
+      },
+      "expected_data_tx_triggers_per_matrix": 6
+    },
+    "Node1": {
+      "tx_buffer": {
+        "used": 3,
+        "capacity": 16,
+        "remaining": 13
+      },
+      "rx_std_filter": {
+        "used": 4,
+        "capacity": 6,
+        "remaining": 2
+      },
+      "rx_ext_filter": {
+        "used": 1,
+        "capacity": 10,
+        "remaining": 9
+      },
+      "trigger_memory": {
+        "used": 7,
+        "capacity": 43,
+        "remaining": 36
+      },
+      "expected_data_tx_triggers_per_matrix": 20
+    },
+    "Node2": {
+      "tx_buffer": {
+        "used": 3,
+        "capacity": 11,
+        "remaining": 8
+      },
+      "rx_std_filter": {
+        "used": 2,
+        "capacity": 8,
+        "remaining": 6
+      },
+      "rx_ext_filter": {
+        "used": 2,
+        "capacity": 8,
+        "remaining": 6
+      },
+      "trigger_memory": {
+        "used": 9,
+        "capacity": 38,
+        "remaining": 29
+      },
+      "expected_data_tx_triggers_per_matrix": 8
+    },
+    "Node3": {
+      "tx_buffer": {
+        "used": 3,
+        "capacity": 16,
+        "remaining": 13
+      },
+      "rx_std_filter": {
+        "used": 2,
+        "capacity": 4,
+        "remaining": 2
+      },
+      "rx_ext_filter": {
+        "used": 4,
+        "capacity": 4,
+        "remaining": 0
+      },
+      "trigger_memory": {
+        "used": 9,
+        "capacity": 27,
+        "remaining": 18
+      },
+      "expected_data_tx_triggers_per_matrix": 16
+    },
+    "Node4": {
+      "tx_buffer": {
+        "used": 3,
+        "capacity": 5,
+        "remaining": 2
+      },
+      "rx_std_filter": {
+        "used": 2,
+        "capacity": 12,
+        "remaining": 10
+      },
+      "rx_ext_filter": {
+        "used": 0,
+        "capacity": 6,
+        "remaining": 6
+      },
+      "trigger_memory": {
+        "used": 7,
+        "capacity": 46,
+        "remaining": 39
+      },
+      "expected_data_tx_triggers_per_matrix": 8
+    }
+  },
+  "timing_model": "Static Level 1 reservation model; no bus arbitration or clock synchronization simulation",
+  "hardware_export": false,
+  "units": {
+    "time": "NTU",
+    "ntu_ns": 1000
+  }
+}

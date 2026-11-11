@@ -1,0 +1,566 @@
+{
+  "schema_version": 1,
+  "metadata": {
+    "source": "Constrained random generation",
+    "random_generation": {
+      "master_seed": "20261029",
+      "case_index": 5,
+      "case_seed": "849146173836251277950089978763640497877690548315718432621923750072744481773",
+      "attempt": 0,
+      "attempt_seed": "109492339844101490923253041403942950849276192679195192117676362085005986465715",
+      "generator_version": "1.0.0",
+      "python_version": "3.12.14",
+      "scheduler_sha256": "01632dbc30417217dc3f140fb25606d49a0eb329d797c5f57115f05a3a440c96",
+      "options_sha256": "65e1c3783afee7126330e3a30859ef7ddf380ca971157bd8beba4e71ee165165",
+      "features": [
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "constraints": {
+        "node_count": [
+          2,
+          5
+        ],
+        "master_count": [
+          1,
+          2
+        ],
+        "messages_per_node": [
+          2,
+          3
+        ],
+        "matrix_cycles": [
+          4,
+          8,
+          16
+        ],
+        "basic_cycle_ntu": [
+          2400,
+          5000
+        ],
+        "periods": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64
+        ],
+        "target_bus_load": [
+          0.0,
+          1.0
+        ],
+        "window_start_ntu": [
+          0,
+          65535
+        ],
+        "window_length_ntu": [
+          1,
+          65535
+        ]
+      }
+    },
+    "assumptions": [
+      "Static scheduling model; arbitration outcomes are not simulated"
+    ]
+  },
+  "network": {
+    "resource_mode": "custom",
+    "level": 1,
+    "bitrate": 500000,
+    "ntu_ns": 2000,
+    "basic_cycle_ntu": 3997,
+    "matrix_cycles": 8,
+    "expand_matrices": 1,
+    "tx_enable_ntu": 6,
+    "guard_ntu": 10,
+    "filter_delay_ntu": 1,
+    "min_trigger_spacing_ntu": 1,
+    "actual_master": "Node2",
+    "gap": {
+      "enabled": false
+    },
+    "reference": {
+      "can_id": "0x085",
+      "frame_format": "standard",
+      "dlc": 1,
+      "tx_mark_ntu": 3995,
+      "watch_mark_ntu": 4297,
+      "unstuffed_bits": 55,
+      "stuffing_bound_bits": 11,
+      "reserved_bits": 66,
+      "frame_time_ntu": 66
+    }
+  },
+  "nodes": [
+    {
+      "node_id": "Node0",
+      "node_name": "Node0",
+      "role": "master",
+      "master_priority": 1,
+      "tx_message_capacity": 12,
+      "rx_std_filter_capacity": 9,
+      "rx_ext_filter_capacity": 5,
+      "trigger_capacity": 37
+    },
+    {
+      "node_id": "Node1",
+      "node_name": "Node1",
+      "role": "slave",
+      "tx_message_capacity": 13,
+      "rx_std_filter_capacity": 8,
+      "rx_ext_filter_capacity": 12,
+      "trigger_capacity": 33
+    },
+    {
+      "node_id": "Node2",
+      "node_name": "Node2",
+      "role": "master",
+      "master_priority": 5,
+      "tx_message_capacity": 11,
+      "rx_std_filter_capacity": 11,
+      "rx_ext_filter_capacity": 7,
+      "trigger_capacity": 38
+    },
+    {
+      "node_id": "Node3",
+      "node_name": "Node3",
+      "role": "slave",
+      "tx_message_capacity": 11,
+      "rx_std_filter_capacity": 11,
+      "rx_ext_filter_capacity": 10,
+      "trigger_capacity": 25
+    }
+  ],
+  "messages": [
+    {
+      "name": "Msg000",
+      "can_id": "0xF645F91",
+      "frame_format": "extended",
+      "dlc": 0,
+      "sender": "Node0",
+      "receivers": [
+        {
+          "node_id": "Node2",
+          "check_reception": false,
+          "filter_mnr": 5
+        }
+      ],
+      "transmissions": [
+        {
+          "trigger_type": "single",
+          "period_cycles": 2,
+          "phase": 0,
+          "window_length_ntu": 128,
+          "time_mark": 629
+        }
+      ],
+      "tx_mnr": 9,
+      "unstuffed_bits": 67,
+      "stuffing_bound_bits": 14,
+      "reserved_bits": 81,
+      "frame_time_ntu": 81
+    },
+    {
+      "name": "Msg001",
+      "can_id": "0x49A",
+      "frame_format": "standard",
+      "dlc": 5,
+      "sender": "Node1",
+      "receivers": [
+        {
+          "node_id": "Node0",
+          "check_reception": false,
+          "filter_mnr": 0
+        },
+        {
+          "node_id": "Node2",
+          "check_reception": true,
+          "filter_mnr": 4,
+          "rx_checks": [
+            {
+              "time_mark": 743,
+              "period_cycles": 8,
+              "phase": 5
+            }
+          ]
+        }
+      ],
+      "transmissions": [
+        {
+          "trigger_type": "single",
+          "period_cycles": 8,
+          "phase": 5,
+          "window_length_ntu": 131,
+          "time_mark": 629
+        }
+      ],
+      "tx_mnr": 2,
+      "unstuffed_bits": 87,
+      "stuffing_bound_bits": 19,
+      "reserved_bits": 106,
+      "frame_time_ntu": 106
+    },
+    {
+      "name": "Msg002",
+      "can_id": "0x20E",
+      "frame_format": "standard",
+      "dlc": 1,
+      "sender": "Node2",
+      "receivers": [
+        {
+          "node_id": "Node1",
+          "check_reception": true,
+          "filter_mnr": 0,
+          "rx_checks": [
+            {
+              "time_mark": 831,
+              "period_cycles": 4,
+              "phase": 2
+            },
+            {
+              "time_mark": 834,
+              "period_cycles": 4,
+              "phase": 1
+            }
+          ]
+        },
+        {
+          "node_id": "Node3",
+          "check_reception": false,
+          "filter_mnr": 0
+        }
+      ],
+      "transmissions": [
+        {
+          "trigger_type": "single",
+          "period_cycles": 4,
+          "phase": 2,
+          "window_length_ntu": 115,
+          "time_mark": 757
+        },
+        {
+          "trigger_type": "single",
+          "period_cycles": 4,
+          "phase": 1,
+          "window_length_ntu": 115,
+          "time_mark": 760
+        }
+      ],
+      "tx_mnr": 5,
+      "unstuffed_bits": 55,
+      "stuffing_bound_bits": 11,
+      "reserved_bits": 66,
+      "frame_time_ntu": 66
+    },
+    {
+      "name": "Msg003",
+      "can_id": "0x1FB4CADB",
+      "frame_format": "extended",
+      "dlc": 3,
+      "sender": "Node3",
+      "receivers": [
+        {
+          "node_id": "Node0",
+          "check_reception": false,
+          "filter_mnr": 0
+        }
+      ],
+      "transmissions": [
+        {
+          "trigger_type": "single",
+          "period_cycles": 8,
+          "phase": 6,
+          "window_length_ntu": 155,
+          "time_mark": 872
+        }
+      ],
+      "tx_mnr": 8,
+      "unstuffed_bits": 91,
+      "stuffing_bound_bits": 20,
+      "reserved_bits": 111,
+      "frame_time_ntu": 111
+    },
+    {
+      "name": "Msg004",
+      "can_id": "0xD85670E",
+      "frame_format": "extended",
+      "dlc": 8,
+      "sender": "Node3",
+      "receivers": [
+        {
+          "node_id": "Node2",
+          "check_reception": true,
+          "filter_mnr": 1,
+          "rx_checks": [
+            {
+              "time_mark": 1196,
+              "period_cycles": 2,
+              "phase": 0
+            }
+          ]
+        }
+      ],
+      "transmissions": [
+        {
+          "trigger_type": "single",
+          "period_cycles": 2,
+          "phase": 0,
+          "window_length_ntu": 208,
+          "time_mark": 1027
+        }
+      ],
+      "unstuffed_bits": 131,
+      "stuffing_bound_bits": 30,
+      "reserved_bits": 161,
+      "frame_time_ntu": 161,
+      "tx_mnr": 0
+    },
+    {
+      "name": "Msg005",
+      "can_id": "0x7FF",
+      "frame_format": "standard",
+      "dlc": 6,
+      "sender": "Node0",
+      "receivers": [
+        {
+          "node_id": "Node1",
+          "check_reception": false,
+          "filter_mnr": 1
+        },
+        {
+          "node_id": "Node2",
+          "check_reception": false,
+          "filter_mnr": 3
+        }
+      ],
+      "transmissions": [
+        {
+          "trigger_type": "merged",
+          "period_cycles": 1,
+          "phase": 0,
+          "group_id": "ZMerge000",
+          "time_mark": 1235
+        }
+      ],
+      "unstuffed_bits": 95,
+      "stuffing_bound_bits": 21,
+      "reserved_bits": 116,
+      "frame_time_ntu": 116,
+      "tx_mnr": 0
+    },
+    {
+      "name": "Msg006",
+      "can_id": "0x28D",
+      "frame_format": "standard",
+      "dlc": 0,
+      "sender": "Node0",
+      "receivers": [
+        {
+          "node_id": "Node1",
+          "check_reception": false,
+          "filter_mnr": 3
+        },
+        {
+          "node_id": "Node2",
+          "check_reception": false,
+          "filter_mnr": 0
+        }
+      ],
+      "transmissions": [
+        {
+          "trigger_type": "arbi",
+          "period_cycles": 1,
+          "phase": 0,
+          "group_id": "ZMerge000",
+          "time_mark": 1251
+        }
+      ],
+      "tx_mnr": 8,
+      "unstuffed_bits": 47,
+      "stuffing_bound_bits": 9,
+      "reserved_bits": 56,
+      "frame_time_ntu": 56
+    },
+    {
+      "name": "Msg007",
+      "can_id": "0xB47E032",
+      "frame_format": "extended",
+      "dlc": 4,
+      "sender": "Node1",
+      "receivers": [
+        {
+          "node_id": "Node0",
+          "check_reception": false,
+          "filter_mnr": 1
+        },
+        {
+          "node_id": "Node3",
+          "check_reception": false,
+          "filter_mnr": 4
+        }
+      ],
+      "transmissions": [
+        {
+          "trigger_type": "merged",
+          "period_cycles": 8,
+          "phase": 7,
+          "group_id": "ZMerge001",
+          "time_mark": 629
+        }
+      ],
+      "unstuffed_bits": 99,
+      "stuffing_bound_bits": 22,
+      "reserved_bits": 121,
+      "frame_time_ntu": 121,
+      "tx_mnr": 0
+    },
+    {
+      "name": "Msg008",
+      "can_id": "0x2C5",
+      "frame_format": "standard",
+      "dlc": 5,
+      "sender": "Node1",
+      "receivers": [
+        {
+          "node_id": "Node0",
+          "check_reception": false,
+          "filter_mnr": 2
+        },
+        {
+          "node_id": "Node3",
+          "check_reception": false,
+          "filter_mnr": 1
+        }
+      ],
+      "transmissions": [
+        {
+          "trigger_type": "arbi",
+          "period_cycles": 8,
+          "phase": 7,
+          "group_id": "ZMerge001",
+          "time_mark": 645
+        }
+      ],
+      "tx_mnr": 12,
+      "unstuffed_bits": 87,
+      "stuffing_bound_bits": 19,
+      "reserved_bits": 106,
+      "frame_time_ntu": 106
+    },
+    {
+      "name": "Msg009",
+      "can_id": "0x2E3",
+      "frame_format": "standard",
+      "dlc": 3,
+      "sender": "Node2",
+      "receivers": [
+        {
+          "node_id": "Node1",
+          "check_reception": false,
+          "filter_mnr": 2
+        }
+      ],
+      "transmissions": [
+        {
+          "trigger_type": "merged",
+          "period_cycles": 1,
+          "phase": 0,
+          "group_id": "ZMerge002",
+          "time_mark": 1458
+        }
+      ],
+      "unstuffed_bits": 71,
+      "stuffing_bound_bits": 15,
+      "reserved_bits": 86,
+      "frame_time_ntu": 86,
+      "tx_mnr": 0
+    },
+    {
+      "name": "Msg010",
+      "can_id": "0x6DC",
+      "frame_format": "standard",
+      "dlc": 4,
+      "sender": "Node2",
+      "receivers": [
+        {
+          "node_id": "Node0",
+          "check_reception": false,
+          "filter_mnr": 3
+        },
+        {
+          "node_id": "Node3",
+          "check_reception": false,
+          "filter_mnr": 2
+        }
+      ],
+      "transmissions": [
+        {
+          "trigger_type": "arbi",
+          "period_cycles": 1,
+          "phase": 0,
+          "group_id": "ZMerge002",
+          "time_mark": 1474
+        }
+      ],
+      "tx_mnr": 8,
+      "unstuffed_bits": 79,
+      "stuffing_bound_bits": 17,
+      "reserved_bits": 96,
+      "frame_time_ntu": 96
+    },
+    {
+      "name": "Msg011",
+      "can_id": "0x1350F385",
+      "frame_format": "extended",
+      "dlc": 3,
+      "sender": "Node3",
+      "receivers": [
+        {
+          "node_id": "Node0",
+          "check_reception": false,
+          "filter_mnr": 2
+        }
+      ],
+      "transmissions": [
+        {
+          "trigger_type": "arbi",
+          "period_cycles": 1,
+          "phase": 0,
+          "group_id": "ZMerge002",
+          "time_mark": 1490
+        }
+      ],
+      "tx_mnr": 3,
+      "unstuffed_bits": 91,
+      "stuffing_bound_bits": 20,
+      "reserved_bits": 111,
+      "frame_time_ntu": 111
+    }
+  ],
+  "arbitration_groups": [
+    {
+      "group_id": "ZMerge000",
+      "kind": "merged",
+      "length_ntu": 223
+    },
+    {
+      "group_id": "ZMerge001",
+      "kind": "merged",
+      "length_ntu": 283
+    },
+    {
+      "group_id": "ZMerge002",
+      "kind": "merged",
+      "length_ntu": 353
+    }
+  ]
+}

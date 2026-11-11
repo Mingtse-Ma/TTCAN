@@ -1,0 +1,9 @@
+{
+  "source": "Actual exported schedule JSON; model-rendered illustrations, not browser screenshots",
+  "default_matrix_cycles": 64,
+  "random_nodes": 4,
+  "random_matrix_cycles": 8,
+  "gif_frames": 5,
+  "gif_duration_ms": 15400,
+  "arbitration_simulated": false
+}

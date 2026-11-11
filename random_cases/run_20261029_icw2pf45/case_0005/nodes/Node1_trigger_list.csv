@@ -1,0 +1,34 @@
+node_id,alias,time_mark_ntu,period_cycles,phase,mnr,resource_type,message_name,can_id,window_id,group_id,time_label,state,trigger_index,active_cycles,type_code,type_name,cycle_code
+Node1,single,629,8,5,2,tx_buffer,Msg001,0x49A,Msg001_0,,,both,0,[5],0x2,Tx_Trigger_Single,0b0001101
+Node1,merged,629,8,7,0,tx_buffer,Msg007,0xB47E032,ZMerge001,ZMerge001,,both,1,[7],0x5,Tx_Trigger_Merged,0b0001111
+Node1,arbi,645,8,7,12,tx_buffer,Msg008,0x2C5,ZMerge001,ZMerge001,,both,2,[7],0x4,Tx_Trigger_Arbitration,0b0001111
+Node1,rx,831,4,2,0,rx_std_filter,Msg002,0x20E,,,,both,3,"[2, 6]",0x8,Rx_Trigger,0b0000110
+Node1,rx,834,4,1,0,rx_std_filter,Msg002,0x20E,,,,both,4,"[1, 5]",0x8,Rx_Trigger,0b0000101
+Node1,watch,4297,,,,,,,,,,normal,5,"[0, 1, 2, 3, 4, 5, 6, 7]",0x6,Watch_Trigger,
+Node1,end,,,,,,,,,,,padding,6,[],0xA,End_of_List,
+Node1,end,,,,,,,,,,,padding,7,[],0xA,End_of_List,
+Node1,end,,,,,,,,,,,padding,8,[],0xA,End_of_List,
+Node1,end,,,,,,,,,,,padding,9,[],0xA,End_of_List,
+Node1,end,,,,,,,,,,,padding,10,[],0xA,End_of_List,
+Node1,end,,,,,,,,,,,padding,11,[],0xA,End_of_List,
+Node1,end,,,,,,,,,,,padding,12,[],0xA,End_of_List,
+Node1,end,,,,,,,,,,,padding,13,[],0xA,End_of_List,
+Node1,end,,,,,,,,,,,padding,14,[],0xA,End_of_List,
+Node1,end,,,,,,,,,,,padding,15,[],0xA,End_of_List,
+Node1,end,,,,,,,,,,,padding,16,[],0xA,End_of_List,
+Node1,end,,,,,,,,,,,padding,17,[],0xA,End_of_List,
+Node1,end,,,,,,,,,,,padding,18,[],0xA,End_of_List,
+Node1,end,,,,,,,,,,,padding,19,[],0xA,End_of_List,
+Node1,end,,,,,,,,,,,padding,20,[],0xA,End_of_List,
+Node1,end,,,,,,,,,,,padding,21,[],0xA,End_of_List,
+Node1,end,,,,,,,,,,,padding,22,[],0xA,End_of_List,
+Node1,end,,,,,,,,,,,padding,23,[],0xA,End_of_List,
+Node1,end,,,,,,,,,,,padding,24,[],0xA,End_of_List,
+Node1,end,,,,,,,,,,,padding,25,[],0xA,End_of_List,
+Node1,end,,,,,,,,,,,padding,26,[],0xA,End_of_List,
+Node1,end,,,,,,,,,,,padding,27,[],0xA,End_of_List,
+Node1,end,,,,,,,,,,,padding,28,[],0xA,End_of_List,
+Node1,end,,,,,,,,,,,padding,29,[],0xA,End_of_List,
+Node1,end,,,,,,,,,,,padding,30,[],0xA,End_of_List,
+Node1,end,,,,,,,,,,,padding,31,[],0xA,End_of_List,
+Node1,end,,,,,,,,,,,padding,32,[],0xA,End_of_List,

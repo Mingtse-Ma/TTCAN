@@ -1,0 +1,34 @@
+[
+  {
+    "message_name": "Msg002",
+    "can_id": "0xA1F4C88",
+    "direction": "tx",
+    "resource_type": "tx_buffer",
+    "mnr": 4,
+    "peer": "Node0"
+  },
+  {
+    "message_name": "Msg005",
+    "can_id": "0x24D",
+    "direction": "tx",
+    "resource_type": "tx_buffer",
+    "mnr": 9,
+    "peer": "Node3"
+  },
+  {
+    "message_name": "Msg006",
+    "can_id": "0x7B6",
+    "direction": "tx",
+    "resource_type": "tx_buffer",
+    "mnr": 5,
+    "peer": "Node3"
+  },
+  {
+    "message_name": "Msg008",
+    "can_id": "0x32C",
+    "direction": "rx",
+    "resource_type": "rx_std_filter",
+    "mnr": 5,
+    "peer": "Node2"
+  }
+]

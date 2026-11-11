@@ -1,0 +1,2189 @@
+{
+  "columns": [
+    {
+      "column_index": 0,
+      "start_ntu": 0,
+      "end_ntu": 66
+    },
+    {
+      "column_index": 1,
+      "start_ntu": 66,
+      "end_ntu": 1412
+    },
+    {
+      "column_index": 2,
+      "start_ntu": 1412,
+      "end_ntu": 1486
+    },
+    {
+      "column_index": 3,
+      "start_ntu": 1486,
+      "end_ntu": 1518
+    },
+    {
+      "column_index": 4,
+      "start_ntu": 1518,
+      "end_ntu": 1656
+    },
+    {
+      "column_index": 5,
+      "start_ntu": 1656,
+      "end_ntu": 1669
+    },
+    {
+      "column_index": 6,
+      "start_ntu": 1669,
+      "end_ntu": 1682
+    },
+    {
+      "column_index": 7,
+      "start_ntu": 1682,
+      "end_ntu": 1796
+    },
+    {
+      "column_index": 8,
+      "start_ntu": 1796,
+      "end_ntu": 1809
+    },
+    {
+      "column_index": 9,
+      "start_ntu": 1809,
+      "end_ntu": 2052
+    },
+    {
+      "column_index": 10,
+      "start_ntu": 2052,
+      "end_ntu": 2065
+    },
+    {
+      "column_index": 11,
+      "start_ntu": 2065,
+      "end_ntu": 2078
+    },
+    {
+      "column_index": 12,
+      "start_ntu": 2078,
+      "end_ntu": 2080
+    },
+    {
+      "column_index": 13,
+      "start_ntu": 2080,
+      "end_ntu": 2091
+    },
+    {
+      "column_index": 14,
+      "start_ntu": 2091,
+      "end_ntu": 2613
+    },
+    {
+      "column_index": 15,
+      "start_ntu": 2613,
+      "end_ntu": 2626
+    },
+    {
+      "column_index": 16,
+      "start_ntu": 2626,
+      "end_ntu": 2783
+    },
+    {
+      "column_index": 17,
+      "start_ntu": 2783,
+      "end_ntu": 3418
+    },
+    {
+      "column_index": 18,
+      "start_ntu": 3418,
+      "end_ntu": 3420
+    }
+  ],
+  "rows": [
+    {
+      "cycle": 0,
+      "cells": [
+        {
+          "column_index": 0,
+          "start_ntu": 0,
+          "end_ntu": 66,
+          "window_id": "reference",
+          "kind": "reference",
+          "messages": [
+            "Reference"
+          ],
+          "nodes": [
+            "Node3"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 1,
+          "start_ntu": 66,
+          "end_ntu": 1412,
+          "window_id": "free_0_66",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 2,
+          "start_ntu": 1412,
+          "end_ntu": 1486,
+          "window_id": "Msg000_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg000"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 3,
+          "start_ntu": 1486,
+          "end_ntu": 1518,
+          "window_id": "Msg000_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg000"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 4,
+          "start_ntu": 1518,
+          "end_ntu": 1656,
+          "window_id": "Msg001_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg001"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 5,
+          "start_ntu": 1656,
+          "end_ntu": 1669,
+          "window_id": "Msg002_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg002"
+          ],
+          "nodes": [
+            "Node3"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 6,
+          "start_ntu": 1669,
+          "end_ntu": 1682,
+          "window_id": "Msg002_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg002"
+          ],
+          "nodes": [
+            "Node3"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 7,
+          "start_ntu": 1682,
+          "end_ntu": 1796,
+          "window_id": "Msg002_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg002"
+          ],
+          "nodes": [
+            "Node3"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 8,
+          "start_ntu": 1796,
+          "end_ntu": 1809,
+          "window_id": "ZMerge001",
+          "kind": "merged",
+          "messages": [
+            "Msg004",
+            "Msg005"
+          ],
+          "nodes": [
+            "Node0"
+          ],
+          "group_id": "ZMerge001"
+        },
+        {
+          "column_index": 9,
+          "start_ntu": 1809,
+          "end_ntu": 2052,
+          "window_id": "ZMerge001",
+          "kind": "merged",
+          "messages": [
+            "Msg004",
+            "Msg005"
+          ],
+          "nodes": [
+            "Node0"
+          ],
+          "group_id": "ZMerge001"
+        },
+        {
+          "column_index": 10,
+          "start_ntu": 2052,
+          "end_ntu": 2065,
+          "window_id": "ZMerge004",
+          "kind": "merged",
+          "messages": [
+            "Msg006",
+            "Msg009",
+            "Msg010",
+            "Msg011"
+          ],
+          "nodes": [
+            "Node1",
+            "Node3",
+            "Node4"
+          ],
+          "group_id": "ZMerge004"
+        },
+        {
+          "column_index": 11,
+          "start_ntu": 2065,
+          "end_ntu": 2078,
+          "window_id": "ZMerge004",
+          "kind": "merged",
+          "messages": [
+            "Msg006",
+            "Msg009",
+            "Msg010",
+            "Msg011"
+          ],
+          "nodes": [
+            "Node1",
+            "Node3",
+            "Node4"
+          ],
+          "group_id": "ZMerge004"
+        },
+        {
+          "column_index": 12,
+          "start_ntu": 2078,
+          "end_ntu": 2080,
+          "window_id": "ZMerge004",
+          "kind": "merged",
+          "messages": [
+            "Msg006",
+            "Msg009",
+            "Msg010",
+            "Msg011"
+          ],
+          "nodes": [
+            "Node1",
+            "Node3",
+            "Node4"
+          ],
+          "group_id": "ZMerge004"
+        },
+        {
+          "column_index": 13,
+          "start_ntu": 2080,
+          "end_ntu": 2091,
+          "window_id": "ZMerge004",
+          "kind": "merged",
+          "messages": [
+            "Msg006",
+            "Msg009",
+            "Msg010",
+            "Msg011"
+          ],
+          "nodes": [
+            "Node1",
+            "Node3",
+            "Node4"
+          ],
+          "group_id": "ZMerge004"
+        },
+        {
+          "column_index": 14,
+          "start_ntu": 2091,
+          "end_ntu": 2613,
+          "window_id": "ZMerge004",
+          "kind": "merged",
+          "messages": [
+            "Msg006",
+            "Msg009",
+            "Msg010",
+            "Msg011"
+          ],
+          "nodes": [
+            "Node1",
+            "Node3",
+            "Node4"
+          ],
+          "group_id": "ZMerge004"
+        },
+        {
+          "column_index": 15,
+          "start_ntu": 2613,
+          "end_ntu": 2626,
+          "window_id": "ZMerge003",
+          "kind": "merged",
+          "messages": [
+            "Msg007",
+            "Msg008"
+          ],
+          "nodes": [
+            "Node2"
+          ],
+          "group_id": "ZMerge003"
+        },
+        {
+          "column_index": 16,
+          "start_ntu": 2626,
+          "end_ntu": 2783,
+          "window_id": "ZMerge003",
+          "kind": "merged",
+          "messages": [
+            "Msg007",
+            "Msg008"
+          ],
+          "nodes": [
+            "Node2"
+          ],
+          "group_id": "ZMerge003"
+        },
+        {
+          "column_index": 17,
+          "start_ntu": 2783,
+          "end_ntu": 3418,
+          "window_id": "free_0_2783",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 18,
+          "start_ntu": 3418,
+          "end_ntu": 3420,
+          "window_id": "free_0_2783",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        }
+      ]
+    },
+    {
+      "cycle": 1,
+      "cells": [
+        {
+          "column_index": 0,
+          "start_ntu": 0,
+          "end_ntu": 66,
+          "window_id": "reference",
+          "kind": "reference",
+          "messages": [
+            "Reference"
+          ],
+          "nodes": [
+            "Node3"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 1,
+          "start_ntu": 66,
+          "end_ntu": 1412,
+          "window_id": "free_1_66",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 2,
+          "start_ntu": 1412,
+          "end_ntu": 1486,
+          "window_id": "Msg000_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg000"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 3,
+          "start_ntu": 1486,
+          "end_ntu": 1518,
+          "window_id": "Msg000_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg000"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 4,
+          "start_ntu": 1518,
+          "end_ntu": 1656,
+          "window_id": "Msg001_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg001"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 5,
+          "start_ntu": 1656,
+          "end_ntu": 1669,
+          "window_id": "ZMerge006",
+          "kind": "merged",
+          "messages": [
+            "Msg003",
+            "Msg012",
+            "Msg013"
+          ],
+          "nodes": [
+            "Node0",
+            "Node4"
+          ],
+          "group_id": "ZMerge006"
+        },
+        {
+          "column_index": 6,
+          "start_ntu": 1669,
+          "end_ntu": 1682,
+          "window_id": "ZMerge006",
+          "kind": "merged",
+          "messages": [
+            "Msg003",
+            "Msg012",
+            "Msg013"
+          ],
+          "nodes": [
+            "Node0",
+            "Node4"
+          ],
+          "group_id": "ZMerge006"
+        },
+        {
+          "column_index": 7,
+          "start_ntu": 1682,
+          "end_ntu": 1796,
+          "window_id": "ZMerge006",
+          "kind": "merged",
+          "messages": [
+            "Msg003",
+            "Msg012",
+            "Msg013"
+          ],
+          "nodes": [
+            "Node0",
+            "Node4"
+          ],
+          "group_id": "ZMerge006"
+        },
+        {
+          "column_index": 8,
+          "start_ntu": 1796,
+          "end_ntu": 1809,
+          "window_id": "ZMerge006",
+          "kind": "merged",
+          "messages": [
+            "Msg003",
+            "Msg012",
+            "Msg013"
+          ],
+          "nodes": [
+            "Node0",
+            "Node4"
+          ],
+          "group_id": "ZMerge006"
+        },
+        {
+          "column_index": 9,
+          "start_ntu": 1809,
+          "end_ntu": 2052,
+          "window_id": "ZMerge006",
+          "kind": "merged",
+          "messages": [
+            "Msg003",
+            "Msg012",
+            "Msg013"
+          ],
+          "nodes": [
+            "Node0",
+            "Node4"
+          ],
+          "group_id": "ZMerge006"
+        },
+        {
+          "column_index": 10,
+          "start_ntu": 2052,
+          "end_ntu": 2065,
+          "window_id": "ZMerge006",
+          "kind": "merged",
+          "messages": [
+            "Msg003",
+            "Msg012",
+            "Msg013"
+          ],
+          "nodes": [
+            "Node0",
+            "Node4"
+          ],
+          "group_id": "ZMerge006"
+        },
+        {
+          "column_index": 11,
+          "start_ntu": 2065,
+          "end_ntu": 2078,
+          "window_id": "ZMerge006",
+          "kind": "merged",
+          "messages": [
+            "Msg003",
+            "Msg012",
+            "Msg013"
+          ],
+          "nodes": [
+            "Node0",
+            "Node4"
+          ],
+          "group_id": "ZMerge006"
+        },
+        {
+          "column_index": 12,
+          "start_ntu": 2078,
+          "end_ntu": 2080,
+          "window_id": "ZMerge006",
+          "kind": "merged",
+          "messages": [
+            "Msg003",
+            "Msg012",
+            "Msg013"
+          ],
+          "nodes": [
+            "Node0",
+            "Node4"
+          ],
+          "group_id": "ZMerge006"
+        },
+        {
+          "column_index": 13,
+          "start_ntu": 2080,
+          "end_ntu": 2091,
+          "window_id": "free_1_2080",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 14,
+          "start_ntu": 2091,
+          "end_ntu": 2613,
+          "window_id": "free_1_2080",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 15,
+          "start_ntu": 2613,
+          "end_ntu": 2626,
+          "window_id": "free_1_2080",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 16,
+          "start_ntu": 2626,
+          "end_ntu": 2783,
+          "window_id": "free_1_2080",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 17,
+          "start_ntu": 2783,
+          "end_ntu": 3418,
+          "window_id": "free_1_2080",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 18,
+          "start_ntu": 3418,
+          "end_ntu": 3420,
+          "window_id": "free_1_2080",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        }
+      ]
+    },
+    {
+      "cycle": 2,
+      "cells": [
+        {
+          "column_index": 0,
+          "start_ntu": 0,
+          "end_ntu": 66,
+          "window_id": "reference",
+          "kind": "reference",
+          "messages": [
+            "Reference"
+          ],
+          "nodes": [
+            "Node3"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 1,
+          "start_ntu": 66,
+          "end_ntu": 1412,
+          "window_id": "free_2_66",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 2,
+          "start_ntu": 1412,
+          "end_ntu": 1486,
+          "window_id": "Msg000_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg000"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 3,
+          "start_ntu": 1486,
+          "end_ntu": 1518,
+          "window_id": "Msg000_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg000"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 4,
+          "start_ntu": 1518,
+          "end_ntu": 1656,
+          "window_id": "Msg001_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg001"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 5,
+          "start_ntu": 1656,
+          "end_ntu": 1669,
+          "window_id": "Msg002_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg002"
+          ],
+          "nodes": [
+            "Node3"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 6,
+          "start_ntu": 1669,
+          "end_ntu": 1682,
+          "window_id": "Msg002_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg002"
+          ],
+          "nodes": [
+            "Node3"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 7,
+          "start_ntu": 1682,
+          "end_ntu": 1796,
+          "window_id": "Msg002_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg002"
+          ],
+          "nodes": [
+            "Node3"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 8,
+          "start_ntu": 1796,
+          "end_ntu": 1809,
+          "window_id": "ZMerge001",
+          "kind": "merged",
+          "messages": [
+            "Msg004",
+            "Msg005"
+          ],
+          "nodes": [
+            "Node0"
+          ],
+          "group_id": "ZMerge001"
+        },
+        {
+          "column_index": 9,
+          "start_ntu": 1809,
+          "end_ntu": 2052,
+          "window_id": "ZMerge001",
+          "kind": "merged",
+          "messages": [
+            "Msg004",
+            "Msg005"
+          ],
+          "nodes": [
+            "Node0"
+          ],
+          "group_id": "ZMerge001"
+        },
+        {
+          "column_index": 10,
+          "start_ntu": 2052,
+          "end_ntu": 2065,
+          "window_id": "ZMerge004",
+          "kind": "merged",
+          "messages": [
+            "Msg006",
+            "Msg009",
+            "Msg010",
+            "Msg011"
+          ],
+          "nodes": [
+            "Node1",
+            "Node3",
+            "Node4"
+          ],
+          "group_id": "ZMerge004"
+        },
+        {
+          "column_index": 11,
+          "start_ntu": 2065,
+          "end_ntu": 2078,
+          "window_id": "ZMerge004",
+          "kind": "merged",
+          "messages": [
+            "Msg006",
+            "Msg009",
+            "Msg010",
+            "Msg011"
+          ],
+          "nodes": [
+            "Node1",
+            "Node3",
+            "Node4"
+          ],
+          "group_id": "ZMerge004"
+        },
+        {
+          "column_index": 12,
+          "start_ntu": 2078,
+          "end_ntu": 2080,
+          "window_id": "ZMerge004",
+          "kind": "merged",
+          "messages": [
+            "Msg006",
+            "Msg009",
+            "Msg010",
+            "Msg011"
+          ],
+          "nodes": [
+            "Node1",
+            "Node3",
+            "Node4"
+          ],
+          "group_id": "ZMerge004"
+        },
+        {
+          "column_index": 13,
+          "start_ntu": 2080,
+          "end_ntu": 2091,
+          "window_id": "ZMerge004",
+          "kind": "merged",
+          "messages": [
+            "Msg006",
+            "Msg009",
+            "Msg010",
+            "Msg011"
+          ],
+          "nodes": [
+            "Node1",
+            "Node3",
+            "Node4"
+          ],
+          "group_id": "ZMerge004"
+        },
+        {
+          "column_index": 14,
+          "start_ntu": 2091,
+          "end_ntu": 2613,
+          "window_id": "ZMerge004",
+          "kind": "merged",
+          "messages": [
+            "Msg006",
+            "Msg009",
+            "Msg010",
+            "Msg011"
+          ],
+          "nodes": [
+            "Node1",
+            "Node3",
+            "Node4"
+          ],
+          "group_id": "ZMerge004"
+        },
+        {
+          "column_index": 15,
+          "start_ntu": 2613,
+          "end_ntu": 2626,
+          "window_id": "free_2_2613",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 16,
+          "start_ntu": 2626,
+          "end_ntu": 2783,
+          "window_id": "free_2_2613",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 17,
+          "start_ntu": 2783,
+          "end_ntu": 3418,
+          "window_id": "free_2_2613",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 18,
+          "start_ntu": 3418,
+          "end_ntu": 3420,
+          "window_id": "free_2_2613",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        }
+      ]
+    },
+    {
+      "cycle": 3,
+      "cells": [
+        {
+          "column_index": 0,
+          "start_ntu": 0,
+          "end_ntu": 66,
+          "window_id": "reference",
+          "kind": "reference",
+          "messages": [
+            "Reference"
+          ],
+          "nodes": [
+            "Node3"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 1,
+          "start_ntu": 66,
+          "end_ntu": 1412,
+          "window_id": "free_3_66",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 2,
+          "start_ntu": 1412,
+          "end_ntu": 1486,
+          "window_id": "Msg000_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg000"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 3,
+          "start_ntu": 1486,
+          "end_ntu": 1518,
+          "window_id": "Msg000_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg000"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 4,
+          "start_ntu": 1518,
+          "end_ntu": 1656,
+          "window_id": "Msg001_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg001"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 5,
+          "start_ntu": 1656,
+          "end_ntu": 1669,
+          "window_id": "free_3_1656",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 6,
+          "start_ntu": 1669,
+          "end_ntu": 1682,
+          "window_id": "free_3_1656",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 7,
+          "start_ntu": 1682,
+          "end_ntu": 1796,
+          "window_id": "free_3_1656",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 8,
+          "start_ntu": 1796,
+          "end_ntu": 1809,
+          "window_id": "free_3_1656",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 9,
+          "start_ntu": 1809,
+          "end_ntu": 2052,
+          "window_id": "free_3_1656",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 10,
+          "start_ntu": 2052,
+          "end_ntu": 2065,
+          "window_id": "free_3_1656",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 11,
+          "start_ntu": 2065,
+          "end_ntu": 2078,
+          "window_id": "free_3_1656",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 12,
+          "start_ntu": 2078,
+          "end_ntu": 2080,
+          "window_id": "free_3_1656",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 13,
+          "start_ntu": 2080,
+          "end_ntu": 2091,
+          "window_id": "free_3_1656",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 14,
+          "start_ntu": 2091,
+          "end_ntu": 2613,
+          "window_id": "free_3_1656",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 15,
+          "start_ntu": 2613,
+          "end_ntu": 2626,
+          "window_id": "free_3_1656",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 16,
+          "start_ntu": 2626,
+          "end_ntu": 2783,
+          "window_id": "free_3_1656",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 17,
+          "start_ntu": 2783,
+          "end_ntu": 3418,
+          "window_id": "free_3_1656",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 18,
+          "start_ntu": 3418,
+          "end_ntu": 3420,
+          "window_id": "free_3_1656",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        }
+      ]
+    },
+    {
+      "cycle": 4,
+      "cells": [
+        {
+          "column_index": 0,
+          "start_ntu": 0,
+          "end_ntu": 66,
+          "window_id": "reference",
+          "kind": "reference",
+          "messages": [
+            "Reference"
+          ],
+          "nodes": [
+            "Node3"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 1,
+          "start_ntu": 66,
+          "end_ntu": 1412,
+          "window_id": "free_4_66",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 2,
+          "start_ntu": 1412,
+          "end_ntu": 1486,
+          "window_id": "Msg000_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg000"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 3,
+          "start_ntu": 1486,
+          "end_ntu": 1518,
+          "window_id": "Msg000_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg000"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 4,
+          "start_ntu": 1518,
+          "end_ntu": 1656,
+          "window_id": "Msg001_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg001"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 5,
+          "start_ntu": 1656,
+          "end_ntu": 1669,
+          "window_id": "Msg002_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg002"
+          ],
+          "nodes": [
+            "Node3"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 6,
+          "start_ntu": 1669,
+          "end_ntu": 1682,
+          "window_id": "Msg002_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg002"
+          ],
+          "nodes": [
+            "Node3"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 7,
+          "start_ntu": 1682,
+          "end_ntu": 1796,
+          "window_id": "Msg002_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg002"
+          ],
+          "nodes": [
+            "Node3"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 8,
+          "start_ntu": 1796,
+          "end_ntu": 1809,
+          "window_id": "ZMerge001",
+          "kind": "merged",
+          "messages": [
+            "Msg004",
+            "Msg005"
+          ],
+          "nodes": [
+            "Node0"
+          ],
+          "group_id": "ZMerge001"
+        },
+        {
+          "column_index": 9,
+          "start_ntu": 1809,
+          "end_ntu": 2052,
+          "window_id": "ZMerge001",
+          "kind": "merged",
+          "messages": [
+            "Msg004",
+            "Msg005"
+          ],
+          "nodes": [
+            "Node0"
+          ],
+          "group_id": "ZMerge001"
+        },
+        {
+          "column_index": 10,
+          "start_ntu": 2052,
+          "end_ntu": 2065,
+          "window_id": "ZMerge004",
+          "kind": "merged",
+          "messages": [
+            "Msg006",
+            "Msg009",
+            "Msg010",
+            "Msg011"
+          ],
+          "nodes": [
+            "Node1",
+            "Node3",
+            "Node4"
+          ],
+          "group_id": "ZMerge004"
+        },
+        {
+          "column_index": 11,
+          "start_ntu": 2065,
+          "end_ntu": 2078,
+          "window_id": "ZMerge004",
+          "kind": "merged",
+          "messages": [
+            "Msg006",
+            "Msg009",
+            "Msg010",
+            "Msg011"
+          ],
+          "nodes": [
+            "Node1",
+            "Node3",
+            "Node4"
+          ],
+          "group_id": "ZMerge004"
+        },
+        {
+          "column_index": 12,
+          "start_ntu": 2078,
+          "end_ntu": 2080,
+          "window_id": "ZMerge004",
+          "kind": "merged",
+          "messages": [
+            "Msg006",
+            "Msg009",
+            "Msg010",
+            "Msg011"
+          ],
+          "nodes": [
+            "Node1",
+            "Node3",
+            "Node4"
+          ],
+          "group_id": "ZMerge004"
+        },
+        {
+          "column_index": 13,
+          "start_ntu": 2080,
+          "end_ntu": 2091,
+          "window_id": "ZMerge004",
+          "kind": "merged",
+          "messages": [
+            "Msg006",
+            "Msg009",
+            "Msg010",
+            "Msg011"
+          ],
+          "nodes": [
+            "Node1",
+            "Node3",
+            "Node4"
+          ],
+          "group_id": "ZMerge004"
+        },
+        {
+          "column_index": 14,
+          "start_ntu": 2091,
+          "end_ntu": 2613,
+          "window_id": "ZMerge004",
+          "kind": "merged",
+          "messages": [
+            "Msg006",
+            "Msg009",
+            "Msg010",
+            "Msg011"
+          ],
+          "nodes": [
+            "Node1",
+            "Node3",
+            "Node4"
+          ],
+          "group_id": "ZMerge004"
+        },
+        {
+          "column_index": 15,
+          "start_ntu": 2613,
+          "end_ntu": 2626,
+          "window_id": "ZMerge003",
+          "kind": "merged",
+          "messages": [
+            "Msg007",
+            "Msg008"
+          ],
+          "nodes": [
+            "Node2"
+          ],
+          "group_id": "ZMerge003"
+        },
+        {
+          "column_index": 16,
+          "start_ntu": 2626,
+          "end_ntu": 2783,
+          "window_id": "ZMerge003",
+          "kind": "merged",
+          "messages": [
+            "Msg007",
+            "Msg008"
+          ],
+          "nodes": [
+            "Node2"
+          ],
+          "group_id": "ZMerge003"
+        },
+        {
+          "column_index": 17,
+          "start_ntu": 2783,
+          "end_ntu": 3418,
+          "window_id": "free_4_2783",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 18,
+          "start_ntu": 3418,
+          "end_ntu": 3420,
+          "window_id": "free_4_2783",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        }
+      ]
+    },
+    {
+      "cycle": 5,
+      "cells": [
+        {
+          "column_index": 0,
+          "start_ntu": 0,
+          "end_ntu": 66,
+          "window_id": "reference",
+          "kind": "reference",
+          "messages": [
+            "Reference"
+          ],
+          "nodes": [
+            "Node3"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 1,
+          "start_ntu": 66,
+          "end_ntu": 1412,
+          "window_id": "free_5_66",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 2,
+          "start_ntu": 1412,
+          "end_ntu": 1486,
+          "window_id": "Msg000_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg000"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 3,
+          "start_ntu": 1486,
+          "end_ntu": 1518,
+          "window_id": "Msg000_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg000"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 4,
+          "start_ntu": 1518,
+          "end_ntu": 1656,
+          "window_id": "Msg001_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg001"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 5,
+          "start_ntu": 1656,
+          "end_ntu": 1669,
+          "window_id": "ZMerge006",
+          "kind": "merged",
+          "messages": [
+            "Msg003",
+            "Msg012",
+            "Msg013"
+          ],
+          "nodes": [
+            "Node0",
+            "Node4"
+          ],
+          "group_id": "ZMerge006"
+        },
+        {
+          "column_index": 6,
+          "start_ntu": 1669,
+          "end_ntu": 1682,
+          "window_id": "ZMerge006",
+          "kind": "merged",
+          "messages": [
+            "Msg003",
+            "Msg012",
+            "Msg013"
+          ],
+          "nodes": [
+            "Node0",
+            "Node4"
+          ],
+          "group_id": "ZMerge006"
+        },
+        {
+          "column_index": 7,
+          "start_ntu": 1682,
+          "end_ntu": 1796,
+          "window_id": "ZMerge006",
+          "kind": "merged",
+          "messages": [
+            "Msg003",
+            "Msg012",
+            "Msg013"
+          ],
+          "nodes": [
+            "Node0",
+            "Node4"
+          ],
+          "group_id": "ZMerge006"
+        },
+        {
+          "column_index": 8,
+          "start_ntu": 1796,
+          "end_ntu": 1809,
+          "window_id": "ZMerge006",
+          "kind": "merged",
+          "messages": [
+            "Msg003",
+            "Msg012",
+            "Msg013"
+          ],
+          "nodes": [
+            "Node0",
+            "Node4"
+          ],
+          "group_id": "ZMerge006"
+        },
+        {
+          "column_index": 9,
+          "start_ntu": 1809,
+          "end_ntu": 2052,
+          "window_id": "ZMerge006",
+          "kind": "merged",
+          "messages": [
+            "Msg003",
+            "Msg012",
+            "Msg013"
+          ],
+          "nodes": [
+            "Node0",
+            "Node4"
+          ],
+          "group_id": "ZMerge006"
+        },
+        {
+          "column_index": 10,
+          "start_ntu": 2052,
+          "end_ntu": 2065,
+          "window_id": "ZMerge006",
+          "kind": "merged",
+          "messages": [
+            "Msg003",
+            "Msg012",
+            "Msg013"
+          ],
+          "nodes": [
+            "Node0",
+            "Node4"
+          ],
+          "group_id": "ZMerge006"
+        },
+        {
+          "column_index": 11,
+          "start_ntu": 2065,
+          "end_ntu": 2078,
+          "window_id": "ZMerge006",
+          "kind": "merged",
+          "messages": [
+            "Msg003",
+            "Msg012",
+            "Msg013"
+          ],
+          "nodes": [
+            "Node0",
+            "Node4"
+          ],
+          "group_id": "ZMerge006"
+        },
+        {
+          "column_index": 12,
+          "start_ntu": 2078,
+          "end_ntu": 2080,
+          "window_id": "ZMerge006",
+          "kind": "merged",
+          "messages": [
+            "Msg003",
+            "Msg012",
+            "Msg013"
+          ],
+          "nodes": [
+            "Node0",
+            "Node4"
+          ],
+          "group_id": "ZMerge006"
+        },
+        {
+          "column_index": 13,
+          "start_ntu": 2080,
+          "end_ntu": 2091,
+          "window_id": "free_5_2080",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 14,
+          "start_ntu": 2091,
+          "end_ntu": 2613,
+          "window_id": "free_5_2080",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 15,
+          "start_ntu": 2613,
+          "end_ntu": 2626,
+          "window_id": "free_5_2080",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 16,
+          "start_ntu": 2626,
+          "end_ntu": 2783,
+          "window_id": "free_5_2080",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 17,
+          "start_ntu": 2783,
+          "end_ntu": 3418,
+          "window_id": "free_5_2080",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 18,
+          "start_ntu": 3418,
+          "end_ntu": 3420,
+          "window_id": "free_5_2080",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        }
+      ]
+    },
+    {
+      "cycle": 6,
+      "cells": [
+        {
+          "column_index": 0,
+          "start_ntu": 0,
+          "end_ntu": 66,
+          "window_id": "reference",
+          "kind": "reference",
+          "messages": [
+            "Reference"
+          ],
+          "nodes": [
+            "Node3"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 1,
+          "start_ntu": 66,
+          "end_ntu": 1412,
+          "window_id": "free_6_66",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 2,
+          "start_ntu": 1412,
+          "end_ntu": 1486,
+          "window_id": "Msg000_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg000"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 3,
+          "start_ntu": 1486,
+          "end_ntu": 1518,
+          "window_id": "Msg000_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg000"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 4,
+          "start_ntu": 1518,
+          "end_ntu": 1656,
+          "window_id": "Msg001_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg001"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 5,
+          "start_ntu": 1656,
+          "end_ntu": 1669,
+          "window_id": "Msg002_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg002"
+          ],
+          "nodes": [
+            "Node3"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 6,
+          "start_ntu": 1669,
+          "end_ntu": 1682,
+          "window_id": "Msg002_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg002"
+          ],
+          "nodes": [
+            "Node3"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 7,
+          "start_ntu": 1682,
+          "end_ntu": 1796,
+          "window_id": "Msg002_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg002"
+          ],
+          "nodes": [
+            "Node3"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 8,
+          "start_ntu": 1796,
+          "end_ntu": 1809,
+          "window_id": "ZMerge001",
+          "kind": "merged",
+          "messages": [
+            "Msg004",
+            "Msg005"
+          ],
+          "nodes": [
+            "Node0"
+          ],
+          "group_id": "ZMerge001"
+        },
+        {
+          "column_index": 9,
+          "start_ntu": 1809,
+          "end_ntu": 2052,
+          "window_id": "ZMerge001",
+          "kind": "merged",
+          "messages": [
+            "Msg004",
+            "Msg005"
+          ],
+          "nodes": [
+            "Node0"
+          ],
+          "group_id": "ZMerge001"
+        },
+        {
+          "column_index": 10,
+          "start_ntu": 2052,
+          "end_ntu": 2065,
+          "window_id": "ZMerge004",
+          "kind": "merged",
+          "messages": [
+            "Msg006",
+            "Msg009",
+            "Msg010",
+            "Msg011"
+          ],
+          "nodes": [
+            "Node1",
+            "Node3",
+            "Node4"
+          ],
+          "group_id": "ZMerge004"
+        },
+        {
+          "column_index": 11,
+          "start_ntu": 2065,
+          "end_ntu": 2078,
+          "window_id": "ZMerge004",
+          "kind": "merged",
+          "messages": [
+            "Msg006",
+            "Msg009",
+            "Msg010",
+            "Msg011"
+          ],
+          "nodes": [
+            "Node1",
+            "Node3",
+            "Node4"
+          ],
+          "group_id": "ZMerge004"
+        },
+        {
+          "column_index": 12,
+          "start_ntu": 2078,
+          "end_ntu": 2080,
+          "window_id": "ZMerge004",
+          "kind": "merged",
+          "messages": [
+            "Msg006",
+            "Msg009",
+            "Msg010",
+            "Msg011"
+          ],
+          "nodes": [
+            "Node1",
+            "Node3",
+            "Node4"
+          ],
+          "group_id": "ZMerge004"
+        },
+        {
+          "column_index": 13,
+          "start_ntu": 2080,
+          "end_ntu": 2091,
+          "window_id": "ZMerge004",
+          "kind": "merged",
+          "messages": [
+            "Msg006",
+            "Msg009",
+            "Msg010",
+            "Msg011"
+          ],
+          "nodes": [
+            "Node1",
+            "Node3",
+            "Node4"
+          ],
+          "group_id": "ZMerge004"
+        },
+        {
+          "column_index": 14,
+          "start_ntu": 2091,
+          "end_ntu": 2613,
+          "window_id": "ZMerge004",
+          "kind": "merged",
+          "messages": [
+            "Msg006",
+            "Msg009",
+            "Msg010",
+            "Msg011"
+          ],
+          "nodes": [
+            "Node1",
+            "Node3",
+            "Node4"
+          ],
+          "group_id": "ZMerge004"
+        },
+        {
+          "column_index": 15,
+          "start_ntu": 2613,
+          "end_ntu": 2626,
+          "window_id": "free_6_2613",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 16,
+          "start_ntu": 2626,
+          "end_ntu": 2783,
+          "window_id": "free_6_2613",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 17,
+          "start_ntu": 2783,
+          "end_ntu": 3418,
+          "window_id": "free_6_2613",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 18,
+          "start_ntu": 3418,
+          "end_ntu": 3420,
+          "window_id": "free_6_2613",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        }
+      ]
+    },
+    {
+      "cycle": 7,
+      "cells": [
+        {
+          "column_index": 0,
+          "start_ntu": 0,
+          "end_ntu": 66,
+          "window_id": "reference",
+          "kind": "reference",
+          "messages": [
+            "Reference"
+          ],
+          "nodes": [
+            "Node3"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 1,
+          "start_ntu": 66,
+          "end_ntu": 1412,
+          "window_id": "free_7_66",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 2,
+          "start_ntu": 1412,
+          "end_ntu": 1486,
+          "window_id": "Msg000_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg000"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 3,
+          "start_ntu": 1486,
+          "end_ntu": 1518,
+          "window_id": "Msg000_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg000"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 4,
+          "start_ntu": 1518,
+          "end_ntu": 1656,
+          "window_id": "Msg001_0",
+          "kind": "exclusive",
+          "messages": [
+            "Msg001"
+          ],
+          "nodes": [
+            "Node1"
+          ],
+          "group_id": null
+        },
+        {
+          "column_index": 5,
+          "start_ntu": 1656,
+          "end_ntu": 1669,
+          "window_id": "free_7_1656",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 6,
+          "start_ntu": 1669,
+          "end_ntu": 1682,
+          "window_id": "free_7_1656",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 7,
+          "start_ntu": 1682,
+          "end_ntu": 1796,
+          "window_id": "free_7_1656",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 8,
+          "start_ntu": 1796,
+          "end_ntu": 1809,
+          "window_id": "free_7_1656",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 9,
+          "start_ntu": 1809,
+          "end_ntu": 2052,
+          "window_id": "free_7_1656",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 10,
+          "start_ntu": 2052,
+          "end_ntu": 2065,
+          "window_id": "free_7_1656",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 11,
+          "start_ntu": 2065,
+          "end_ntu": 2078,
+          "window_id": "free_7_1656",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 12,
+          "start_ntu": 2078,
+          "end_ntu": 2080,
+          "window_id": "free_7_1656",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 13,
+          "start_ntu": 2080,
+          "end_ntu": 2091,
+          "window_id": "free_7_1656",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 14,
+          "start_ntu": 2091,
+          "end_ntu": 2613,
+          "window_id": "free_7_1656",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 15,
+          "start_ntu": 2613,
+          "end_ntu": 2626,
+          "window_id": "free_7_1656",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 16,
+          "start_ntu": 2626,
+          "end_ntu": 2783,
+          "window_id": "free_7_1656",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 17,
+          "start_ntu": 2783,
+          "end_ntu": 3418,
+          "window_id": "free_7_1656",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        },
+        {
+          "column_index": 18,
+          "start_ntu": 3418,
+          "end_ntu": 3420,
+          "window_id": "free_7_1656",
+          "kind": "free",
+          "messages": [],
+          "nodes": [],
+          "group_id": null
+        }
+      ]
+    }
+  ]
+}

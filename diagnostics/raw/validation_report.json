@@ -1,0 +1,154 @@
+{
+  "valid": false,
+  "errors": 3,
+  "warnings": 0,
+  "issues": [
+    {
+      "severity": "error",
+      "code": "RX_TOO_EARLY",
+      "message": "Rx check has no completed exclusive target transmission",
+      "context": {
+        "node_id": "NodeA",
+        "message_name": "Msg3",
+        "cycle": 0,
+        "time_mark_ntu": 400,
+        "earliest_safe_mark_ntu": null
+      }
+    },
+    {
+      "severity": "error",
+      "code": "TRIGGER_COLLISION",
+      "message": "Multiple triggers are active at the same node, cycle, and Time Mark",
+      "context": {
+        "node_id": "NodeA",
+        "cycle": 0,
+        "time_mark_ntu": 400,
+        "triggers": [
+          {
+            "node_id": "NodeA",
+            "alias": "single",
+            "time_mark_ntu": 400,
+            "period_cycles": 4,
+            "phase": 0,
+            "mnr": 7,
+            "resource_type": "tx_buffer",
+            "message_name": "Msg7",
+            "can_id": "0x107",
+            "window_id": "Msg7_0",
+            "group_id": null,
+            "time_label": "Mark1",
+            "state": "both",
+            "trigger_index": 0,
+            "active_cycles": [
+              0,
+              4,
+              8,
+              12,
+              16,
+              20,
+              24,
+              28,
+              32,
+              36,
+              40,
+              44,
+              48,
+              52,
+              56,
+              60
+            ],
+            "type_code": "0x2",
+            "type_name": "Tx_Trigger_Single",
+            "cycle_code": "0b0000100"
+          },
+          {
+            "node_id": "NodeA",
+            "alias": "rx",
+            "time_mark_ntu": 400,
+            "period_cycles": 64,
+            "phase": 0,
+            "mnr": 3,
+            "resource_type": "rx_std_filter",
+            "message_name": "Msg3",
+            "can_id": "0x103",
+            "window_id": null,
+            "group_id": null,
+            "time_label": "Mark1",
+            "state": "both",
+            "trigger_index": 2,
+            "active_cycles": [
+              0
+            ],
+            "type_code": "0x8",
+            "type_name": "Rx_Trigger",
+            "cycle_code": "0b1000000"
+          }
+        ]
+      }
+    },
+    {
+      "severity": "error",
+      "code": "RX_FILTER_CLEARED",
+      "message": "No accepted target has completed since the preceding Rx check or cycle start",
+      "context": {
+        "node_id": "NodeA",
+        "cycle": 0,
+        "message_name": "Msg3"
+      }
+    }
+  ],
+  "resources": {
+    "NodeB": {
+      "tx_buffer": {
+        "used": 3,
+        "capacity": 4,
+        "remaining": 1
+      },
+      "rx_std_filter": {
+        "used": 3,
+        "capacity": 4,
+        "remaining": 1
+      },
+      "rx_ext_filter": {
+        "used": 0,
+        "capacity": 0,
+        "remaining": 0
+      },
+      "trigger_memory": {
+        "used": 6,
+        "capacity": 16,
+        "remaining": 10
+      },
+      "expected_data_tx_triggers_per_matrix": 3
+    },
+    "NodeA": {
+      "tx_buffer": {
+        "used": 3,
+        "capacity": 8,
+        "remaining": 5
+      },
+      "rx_std_filter": {
+        "used": 3,
+        "capacity": 8,
+        "remaining": 5
+      },
+      "rx_ext_filter": {
+        "used": 0,
+        "capacity": 0,
+        "remaining": 0
+      },
+      "trigger_memory": {
+        "used": 9,
+        "capacity": 16,
+        "remaining": 7
+      },
+      "expected_data_tx_triggers_per_matrix": 19
+    }
+  },
+  "timing_model": "Static Level 1 reservation model; no bus arbitration or clock synchronization simulation",
+  "hardware_export": false,
+  "units": {
+    "time": "NTU",
+    "ntu_ns": 1000
+  }
+}

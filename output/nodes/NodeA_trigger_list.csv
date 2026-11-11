@@ -1,0 +1,17 @@
+node_id,alias,time_mark_ntu,period_cycles,phase,mnr,resource_type,message_name,can_id,window_id,group_id,time_label,state,trigger_index,active_cycles,type_code,type_name,cycle_code
+NodeA,single,400,4,0,7,tx_buffer,Msg7,0x107,Msg7_0,,Mark1,both,0,"[0, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60]",0x2,Tx_Trigger_Single,0b0000100
+NodeA,single,400,64,3,7,tx_buffer,Msg7,0x107,Msg7_1,,Mark1,both,1,[3],0x2,Tx_Trigger_Single,0b1000011
+NodeA,rx,400,64,1,3,rx_std_filter,Msg3,0x103,,,Mark1,both,2,[1],0x8,Rx_Trigger,0b1000001
+NodeA,merged,1000,64,1,2,tx_buffer,Msg2,0x102,Merge1,Merge1,Mark3,both,3,[1],0x5,Tx_Trigger_Merged,0b1000001
+NodeA,rx,1000,64,3,5,rx_std_filter,Msg5,0x105,,,Mark3,both,4,[3],0x8,Rx_Trigger,0b1000011
+NodeA,arbi,1400,64,1,4,tx_buffer,Msg4,0x104,Merge1,Merge1,Mark4,both,5,[1],0x4,Tx_Trigger_Arbitration,0b1000001
+NodeA,rx,1400,64,4,6,rx_std_filter,Msg6,0x106,,,Mark4,both,6,[4],0x8,Rx_Trigger,0b1000100
+NodeA,ref,1998,,,,,,,,,Mark6,normal,7,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63]",0x0,Tx_Ref_Trigger,
+NodeA,watch,2300,,,,,,,,,Mark7,normal,8,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63]",0x6,Watch_Trigger,
+NodeA,end,,,,,,,,,,,padding,9,[],0xA,End_of_List,
+NodeA,end,,,,,,,,,,,padding,10,[],0xA,End_of_List,
+NodeA,end,,,,,,,,,,,padding,11,[],0xA,End_of_List,
+NodeA,end,,,,,,,,,,,padding,12,[],0xA,End_of_List,
+NodeA,end,,,,,,,,,,,padding,13,[],0xA,End_of_List,
+NodeA,end,,,,,,,,,,,padding,14,[],0xA,End_of_List,
+NodeA,end,,,,,,,,,,,padding,15,[],0xA,End_of_List,

@@ -1,0 +1,2839 @@
+{
+  "generator_version": "1.0.0",
+  "python_version": "3.12.14",
+  "scheduler_sha256": "01632dbc30417217dc3f140fb25606d49a0eb329d797c5f57115f05a3a440c96",
+  "generator_sha256": "f71a8accf703f0dbd7a2327c36b8b350f0714b27dea74bb0656e11baceff7382",
+  "options_sha256": "65e1c3783afee7126330e3a30859ef7ddf380ca971157bd8beba4e71ee165165",
+  "options": {
+    "schema_version": 1,
+    "resource_mode": "custom",
+    "controller_version": "3.3.0",
+    "node_count": [
+      2,
+      5
+    ],
+    "master_count": [
+      1,
+      2
+    ],
+    "messages_per_node": [
+      2,
+      3
+    ],
+    "matrix_cycles": [
+      4,
+      8,
+      16
+    ],
+    "basic_cycle_ntu": [
+      2400,
+      5000
+    ],
+    "bitrate_choices": [
+      500000,
+      1000000
+    ],
+    "tx_enable_ntu": [
+      2,
+      6
+    ],
+    "guard_ntu": [
+      10,
+      18
+    ],
+    "filter_delay_ntu": [
+      1,
+      6
+    ],
+    "min_trigger_spacing_ntu": [
+      1,
+      2
+    ],
+    "dlc": [
+      0,
+      8
+    ],
+    "receiver_count": [
+      1,
+      2
+    ],
+    "periods": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "frame_formats": [
+      "extended",
+      "standard"
+    ],
+    "extended_probability": 0.3,
+    "rx_check_probability": 0.6,
+    "explicit_number_probability": 0.5,
+    "repeat_probability": 0.3,
+    "shared_group_probability": 0.6,
+    "window_extra_ntu": [
+      5,
+      30
+    ],
+    "window_start_ntu": [
+      0,
+      65535
+    ],
+    "window_length_ntu": [
+      1,
+      65535
+    ],
+    "target_bus_load": [
+      0.0,
+      1.0
+    ],
+    "window_mix": {
+      "single": 0.5,
+      "arbitration": 0.2,
+      "merged": 0.3
+    },
+    "node_capacity": {
+      "tx_message_capacity": [
+        4,
+        16
+      ],
+      "rx_std_filter_capacity": [
+        4,
+        12
+      ],
+      "rx_ext_filter_capacity": [
+        4,
+        12
+      ],
+      "trigger_capacity": [
+        24,
+        48
+      ]
+    },
+    "required_features": [],
+    "allow_warnings": false,
+    "topology": null
+  },
+  "start_seed": "0",
+  "requested": 100,
+  "succeeded": 100,
+  "failed": 0,
+  "max_attempts": 100,
+  "total_failed_attempts": 4,
+  "issue_counts": {
+    "RX_ARBITRATION_UNCERTAIN": 16
+  },
+  "feature_counts": {
+    "arbitration": 68,
+    "extended": 88,
+    "high_load": 1,
+    "merged": 82,
+    "multi_node_arbitration": 62,
+    "multiple_masters": 54,
+    "multiple_receivers": 78,
+    "rx": 95,
+    "shared_mnr": 59,
+    "shared_time": 64,
+    "single": 100
+  },
+  "logical_window_counts": {
+    "arbitration": 97,
+    "merged": 135,
+    "single": 557
+  },
+  "format_counts": {
+    "extended": 276,
+    "standard": 640
+  },
+  "period_counts": {
+    "1": 252,
+    "16": 85,
+    "2": 285,
+    "4": 221,
+    "8": 171
+  },
+  "dlc_counts": {
+    "0": 89,
+    "1": 111,
+    "2": 120,
+    "3": 107,
+    "4": 112,
+    "5": 100,
+    "6": 80,
+    "7": 100,
+    "8": 97
+  },
+  "node_count_distribution": {
+    "2": 22,
+    "3": 22,
+    "4": 26,
+    "5": 30
+  },
+  "seed_results": [
+    {
+      "seed": "0",
+      "case_index": 0,
+      "case_seed": "105269788544591195948458965239776867414734172584995876921756374997782147772999",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 12,
+        "arbitration": 1,
+        "merged": 1
+      },
+      "reserved_load": 0.26634969325153374,
+      "config_semantic_sha256": "2d028d334bdf65190754d0a21bc66e40636fd26a5813ee7919cd148b931fd380",
+      "core_signature": "abd8d24694d083e44e2ebbecbf70640cc2d0017b34bce27f6f61d64a479e221f"
+    },
+    {
+      "seed": "1",
+      "case_index": 0,
+      "case_seed": "66890606449421454081642080601172504938786509507325217138665260140676770955598",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multiple_masters",
+        "rx",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 2,
+        "arbitration": 2,
+        "merged": 1
+      },
+      "reserved_load": 0.07756593743610714,
+      "config_semantic_sha256": "2bf265abedfcf06130b5448bef805e4f038d124218afbf593a4265f54bb3a6a7",
+      "core_signature": "fd7b0b3e1edfa62699fb49a35ee840cc2e63b8b8105a2116d0d78dd092c000c8"
+    },
+    {
+      "seed": "2",
+      "case_index": 0,
+      "case_seed": "17220821048092072621373966415878555970589870774499343603623602710107080006387",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 10,
+        "arbitration": 1,
+        "merged": 0
+      },
+      "reserved_load": 0.24281129653401798,
+      "config_semantic_sha256": "bdf574ccceb94b45306ab488f9f58dedd659a54fddebafa9b79f49a7050c7dff",
+      "core_signature": "6cb2bf3c1cb6724eef94f8a7d12303df7d59f6109c93e88930a8c69ddc729370"
+    },
+    {
+      "seed": "3",
+      "case_index": 0,
+      "case_seed": "19586598427928704139285147168356330857079777397927793535257292979427011869269",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 1,
+        "arbitration": 1,
+        "merged": 1
+      },
+      "reserved_load": 0.25439266615737205,
+      "config_semantic_sha256": "7eecdec80f422e9188d7916678f66f8a41954bc9956e1d2ac7d8e839c6c9d951",
+      "core_signature": "f73ee7d29ee6b6cd25f891478cd1ff50abe32afe60f64abe8e8acbb65ceee8dc"
+    },
+    {
+      "seed": "4",
+      "case_index": 0,
+      "case_seed": "11561352169729871468644151377866563643288127424661298327862297502629278160732",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 11,
+        "arbitration": 1,
+        "merged": 1
+      },
+      "reserved_load": 0.1985171261487051,
+      "config_semantic_sha256": "8dbcc0c3c8a3affb8134661cf023de52668956a15e29c50853776a286a66cf7a",
+      "core_signature": "06f7ade5fb786d7a9c78ea1d5b604b90d078aa1a75c08c84a46cfadbdab72c95"
+    },
+    {
+      "seed": "5",
+      "case_index": 0,
+      "case_seed": "25332042027624812553752479008989502411734455687385809023934529969322798618188",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_receivers",
+        "rx",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 4,
+        "arbitration": 1,
+        "merged": 2
+      },
+      "reserved_load": 0.06164117907801418,
+      "config_semantic_sha256": "ec85db37e7b5e35a70a7d81d4accacc16b585f3baa7301a50409b69fa4b86390",
+      "core_signature": "8694f8858d6a11eff5cbb3f4d280e96e0483fe04c9b1297ac7e4ce1a7c1d7bd3"
+    },
+    {
+      "seed": "6",
+      "case_index": 0,
+      "case_seed": "41532456981319205000667895103398783916175671266815217968175670959913427655199",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 8,
+        "arbitration": 0,
+        "merged": 3
+      },
+      "reserved_load": 0.31736700077101004,
+      "config_semantic_sha256": "6fad54673cb00e43556b376b6f866ef1a80ba1215c0fa312686c4fb94741c8c1",
+      "core_signature": "a89558315754953e3df3350ecf8d3c3d9eaa0130c91a17b5db4fa5b42ead74e5"
+    },
+    {
+      "seed": "7",
+      "case_index": 0,
+      "case_seed": "101166637373239189546298188748122961556646679847571746265831640836449901391176",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "extended",
+        "merged",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 7,
+        "arbitration": 0,
+        "merged": 2
+      },
+      "reserved_load": 0.2401167698368036,
+      "config_semantic_sha256": "94c7df83824a169d3bacf3f91449d2e7ba5412b633f45ab7119d773326785dd8",
+      "core_signature": "89776495b48aececee2f88e4211c349ff8760742500520ef7955dc8bbf80ddda"
+    },
+    {
+      "seed": "8",
+      "case_index": 0,
+      "case_seed": "116943917456613092651420295342701419220283810964718226845008392774381120045",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 4,
+        "arbitration": 1,
+        "merged": 3
+      },
+      "reserved_load": 0.17796875,
+      "config_semantic_sha256": "50d56c26d9e52cc085808851530f71be6f9f587be64dc9a05d54787eaeed015b",
+      "core_signature": "aa7b248d41e3e3599d1b7980bb49ed8d7106c612aec961da2b21976d4fe26164"
+    },
+    {
+      "seed": "9",
+      "case_index": 0,
+      "case_seed": "51853124805818749808137905154235032093967246324733796760570868808107560181615",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 9,
+        "arbitration": 1,
+        "merged": 1
+      },
+      "reserved_load": 0.16248564867967852,
+      "config_semantic_sha256": "008575ed5e5aa410344c3e303f39f78f5d640c87f63296b0a34127c16fa4987c",
+      "core_signature": "0b25894f477dab760f9960349aed47eec9627be8c4d9c6c93e313b8489b91028"
+    },
+    {
+      "seed": "10",
+      "case_index": 0,
+      "case_seed": "50480760234293980116210824756674241306231542508315359674030618739723425465275",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "extended",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 10,
+        "arbitration": 0,
+        "merged": 0
+      },
+      "reserved_load": 0.24168539325842697,
+      "config_semantic_sha256": "f5c0a30f79d0e4a9ec3b22cc68e50c5b06c0dbb1f2a5b90543db7eca4f87f15b",
+      "core_signature": "d29c214bccb6d6304a09a278afddfd40bcfdb179cff34fa95ea45316c5d17e8d"
+    },
+    {
+      "seed": "11",
+      "case_index": 0,
+      "case_seed": "10782434054402325045971772189401121256942914290185999036997157020064957498668",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 3,
+        "arbitration": 0,
+        "merged": 4
+      },
+      "reserved_load": 0.134765625,
+      "config_semantic_sha256": "29abdc22948dd00f4ea6bf9f183ae9357046346a492f06a88a9d8d338f550ff4",
+      "core_signature": "42d480d0de32007d9d2c8f8a8af384cc821ab97dd0d0610c083a82ebcec4ec2f"
+    },
+    {
+      "seed": "12",
+      "case_index": 0,
+      "case_seed": "14616390635444510629277255190091206459755941668532946947519506786863163150104",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_receivers",
+        "rx",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 2,
+        "arbitration": 2,
+        "merged": 2
+      },
+      "reserved_load": 0.3094898605830165,
+      "config_semantic_sha256": "19dbf22d061d00ab4d84724bb2422ae9a2e19359ff49e51d2f39ba9f0557ffaf",
+      "core_signature": "a82d755cd5ab99fed3d0c5184ecab168381a7676b08218df7152c259e7d3d7b2"
+    },
+    {
+      "seed": "13",
+      "case_index": 0,
+      "case_seed": "103331580548047463411060116998236397608080843908658741191121977499276367861286",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 4,
+        "arbitration": 1,
+        "merged": 1
+      },
+      "reserved_load": 0.08626401630988786,
+      "config_semantic_sha256": "6398633f23988489730035d2c642c02e4d0ab6e660f893726565c7501be336ce",
+      "core_signature": "43853667f6c2fc7b0347bf26263cab9020f65b0e316adfc738c2a90ac5664d97"
+    },
+    {
+      "seed": "14",
+      "case_index": 0,
+      "case_seed": "83390692331589917805480607859731048564278743007485692071389337767950398950865",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 4,
+        "arbitration": 1,
+        "merged": 1
+      },
+      "reserved_load": 0.10356065503124327,
+      "config_semantic_sha256": "8be3987e4812196200e8df9d15dab304fe9fb7175059d281f1018a04dacca5f4",
+      "core_signature": "7406a12a7642683269350098774778d4d56875d035c2a4dae661f7b9d0ec4b37"
+    },
+    {
+      "seed": "15",
+      "case_index": 0,
+      "case_seed": "70202423702552327896784601464025654942163400070399964861071035313970846368580",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "multi_node_arbitration",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 4,
+        "arbitration": 2,
+        "merged": 0
+      },
+      "reserved_load": 0.2140210006176652,
+      "config_semantic_sha256": "f8763038358394d888b906e2a0cf7b26d36db58ddb95019467e70dc1c56c3d05",
+      "core_signature": "5c3a604f61ce8a6ff2e13be3adce95630fb3a58132c35447ddab0febc53221e0"
+    },
+    {
+      "seed": "16",
+      "case_index": 0,
+      "case_seed": "95037712999745586003496629754094559457743546887601756908621585566540937310564",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "extended",
+        "merged",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 5,
+        "arbitration": 0,
+        "merged": 1
+      },
+      "reserved_load": 0.1604669347631814,
+      "config_semantic_sha256": "26e5efa04781efa9796ecb155aee065a8a3c58b22494ce2cccbbcda2f92eef15",
+      "core_signature": "3f550c6f8b824c5aab92cdbab4f0c01b30b2478b6f69b2f119cd63a15417d02c"
+    },
+    {
+      "seed": "17",
+      "case_index": 0,
+      "case_seed": "44584642296848613963278577990427951006820024511387036060983433508456665653692",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_masters",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 1,
+        "arbitration": 1,
+        "merged": 1
+      },
+      "reserved_load": 0.1776218611521418,
+      "config_semantic_sha256": "f43300c0ca559ad501d79e0080999a08ffaf65695e46d08376f134c097a1989b",
+      "core_signature": "595c4337b9da239c99184e7c4ccffac847c7cb7edcd02700b8d3b15b039988a1"
+    },
+    {
+      "seed": "18",
+      "case_index": 0,
+      "case_seed": "80421082033872144842648967829288034689337606578005536451097322705605431520878",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "multiple_masters",
+        "rx",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 3,
+        "arbitration": 2,
+        "merged": 0
+      },
+      "reserved_load": 0.019292091836734693,
+      "config_semantic_sha256": "a03a60c55b06fcb5f6a82a9adf7ad8d7f9420be2c304fdc5aabfbcd16b605c31",
+      "core_signature": "925df4071fb60072d079bf9129917d659d7aa49206d1d2e12f789a94538f3c08"
+    },
+    {
+      "seed": "19",
+      "case_index": 0,
+      "case_seed": "94476632224711029281762104040468744943961328878569592989043075988358463080602",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "extended",
+        "merged",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 7,
+        "arbitration": 0,
+        "merged": 3
+      },
+      "reserved_load": 0.2711432729624838,
+      "config_semantic_sha256": "12977a29aa76febbd2ea8dfc2c5402ddc231ecf458d10d0cba63b1feb3390f17",
+      "core_signature": "247b3e72f975d404ffa3361b6b4d9b61ba0bf709b53bb1fbfd68e0cadfdae9fc"
+    },
+    {
+      "seed": "20",
+      "case_index": 0,
+      "case_seed": "69567863093765134557833181383483279249437280625502658106513099233038305190826",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "extended",
+        "multiple_masters",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 6,
+        "arbitration": 0,
+        "merged": 0
+      },
+      "reserved_load": 0.12817712470214457,
+      "config_semantic_sha256": "3db566fdf1751cc24c14270095957b8c707bbae13244b37df4579dc5150d7cf7",
+      "core_signature": "83e73c057cc7efe6b51ba62b478fd868484548ae9781d459af2f3e8e1c733c1c"
+    },
+    {
+      "seed": "21",
+      "case_index": 0,
+      "case_seed": "88923175698843195708353810739305907972982661575578907449366574209609574458222",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "extended",
+        "merged",
+        "multiple_masters",
+        "rx",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 2,
+        "arbitration": 0,
+        "merged": 1
+      },
+      "reserved_load": 0.06276026174895895,
+      "config_semantic_sha256": "657bf4252f8e1381f72eafe1efab465cd18bc1506c70388f602ee735f1966075",
+      "core_signature": "85a5c77e686a1d2a875d5bfdfaac55c9f01b5a6da9f2acdfcbdaea86253ebe46"
+    },
+    {
+      "seed": "22",
+      "case_index": 0,
+      "case_seed": "24392646110442451358434334076284062987597164469007614035469081822591093039924",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 6,
+        "arbitration": 2,
+        "merged": 1
+      },
+      "reserved_load": 0.06794246536612948,
+      "config_semantic_sha256": "a96e05a0c8d59c91d03bcfb6002fac131211a5250da051126ee084541e412f06",
+      "core_signature": "be2db4cf98093c59debea3ee1e9c58588eb37837ee4cc45749a326b2284a023e"
+    },
+    {
+      "seed": "23",
+      "case_index": 0,
+      "case_seed": "72087368281239160144042099191848458608749987790353332748643848220297582709206",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "extended",
+        "merged",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 4,
+        "arbitration": 0,
+        "merged": 1
+      },
+      "reserved_load": 0.12712539851222104,
+      "config_semantic_sha256": "f11a1256867584c9ebd9ef355012d7ecaeaf86c93fa2e2dd5682030ee42439e6",
+      "core_signature": "591945594c94fbf3bc9ffd603d410b71ca5a8dbfc8a44feea1702622c062edb6"
+    },
+    {
+      "seed": "24",
+      "case_index": 0,
+      "case_seed": "68746099880724859380416195455673025924312518925483652657198274757227112423141",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 3,
+        "arbitration": 2,
+        "merged": 3
+      },
+      "reserved_load": 0.23508299685957829,
+      "config_semantic_sha256": "0d86b2b13e811173b3b78a10c71c82fc9ae6ed08eccadeffdad1a4a0956714ed",
+      "core_signature": "ef2bf73d05485a8377c5658b3bc0610892aec9855cd50bed628591a01da13ca0"
+    },
+    {
+      "seed": "25",
+      "case_index": 0,
+      "case_seed": "30927907809146947029114475548934910619027908719485617590694985608337766181146",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 5,
+        "arbitration": 2,
+        "merged": 1
+      },
+      "reserved_load": 0.3579677795031056,
+      "config_semantic_sha256": "d86317d04d405b9df883f5f9e45fb21edfa20506a1f203a86c8cd8543101dc5e",
+      "core_signature": "49b0366a94c09794c63bd22cba80c763f5e518953f9cf193287d68a4332297d9"
+    },
+    {
+      "seed": "26",
+      "case_index": 0,
+      "case_seed": "99899012991694346275696205307082124419600859826004218263249218774181842993917",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "extended",
+        "merged",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 4,
+        "arbitration": 0,
+        "merged": 2
+      },
+      "reserved_load": 0.1116231303981462,
+      "config_semantic_sha256": "8bfdfab848168342ae7ec366924d6477a4707d73656de60ab162b4a7575874ad",
+      "core_signature": "34468fb2ee1d7175a758310fafff7e4c8352edac28c494508338e54de6c4853f"
+    },
+    {
+      "seed": "27",
+      "case_index": 0,
+      "case_seed": "29963194441676877831730505359511689499038134571798511572071292156816144292800",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "multi_node_arbitration",
+        "multiple_receivers",
+        "rx",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 9,
+        "arbitration": 3,
+        "merged": 0
+      },
+      "reserved_load": 0.29678132494004794,
+      "config_semantic_sha256": "507877ee25f05be6d46980ccaafb7b466c3522c77ec6a3a881c43d7a0073d826",
+      "core_signature": "f095601fc7886547aa28b6f61830e1e895fa0e1d169c8d26fb01366b8f9374c8"
+    },
+    {
+      "seed": "28",
+      "case_index": 0,
+      "case_seed": "106522998235385733611992674554029541016833487119775667590398375510199612017232",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "extended",
+        "merged",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 6,
+        "arbitration": 0,
+        "merged": 1
+      },
+      "reserved_load": 0.0868289821061895,
+      "config_semantic_sha256": "daf7d53c1c259e2adc5e404706d106d5dab25c7673e04a308f5b57714460ce2e",
+      "core_signature": "b00b3f3e116caa11331b0dc85019fa7096a00253fcc41b35702d0ebd003d267d"
+    },
+    {
+      "seed": "29",
+      "case_index": 0,
+      "case_seed": "86861840934847469325030609126581589515313747662278788717548390469116271833553",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "merged",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 9,
+        "arbitration": 0,
+        "merged": 3
+      },
+      "reserved_load": 0.07845464135021098,
+      "config_semantic_sha256": "d3a0d6997825f9dbe6e2379ee188bed227c45c49ab80076d6de57974b5e0b1b5",
+      "core_signature": "0779ddc7cbf435fa0de8fbcdfc9e466a1d392cbbece4dc0f882e726d90cdcb94"
+    },
+    {
+      "seed": "30",
+      "case_index": 0,
+      "case_seed": "95892780857084071228346841549919194442072870021887666001584842549556680711883",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 9,
+        "arbitration": 0,
+        "merged": 3
+      },
+      "reserved_load": 0.21687565308254964,
+      "config_semantic_sha256": "30579baa5f092180bb92df52f7385bb09678cefac1f1e56bf7e2990fdb7e3c04",
+      "core_signature": "415b00435a9c15e429a080c6f46aa2a222126972d6d0b35603c062f009361611"
+    },
+    {
+      "seed": "31",
+      "case_index": 0,
+      "case_seed": "48627745950123860398436497185782787344586745995288474787218519280382153940579",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 9,
+        "arbitration": 0,
+        "merged": 1
+      },
+      "reserved_load": 0.2227864948164752,
+      "config_semantic_sha256": "5be2b2509cadf8bbae6687ae60787b93c43f8712ddccadce7e1a5ccd88f0bf99",
+      "core_signature": "ee4dd6b3ff5d7f32baebb288bda0a52e34cbcee552e4fd0d06feae829b65b5ee"
+    },
+    {
+      "seed": "32",
+      "case_index": 0,
+      "case_seed": "48328667049257726289796393117974831969491599504848960409981157732155706974610",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "multiple_receivers",
+        "rx",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 5,
+        "arbitration": 1,
+        "merged": 0
+      },
+      "reserved_load": 0.10125238802801953,
+      "config_semantic_sha256": "f016c788a064b0c7db3843ae3d07f69ac45cec71c6ae0ec0552efd30b31ef08f",
+      "core_signature": "8726e80964d3a9a37477b225e6356139a3345a6f5ca0333ffb9a026dbce957ee"
+    },
+    {
+      "seed": "33",
+      "case_index": 0,
+      "case_seed": "55150978298787879986688561327167844006622729028595390745749178148110983379640",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 5,
+        "arbitration": 1,
+        "merged": 3
+      },
+      "reserved_load": 0.16717179183914843,
+      "config_semantic_sha256": "c1a6edd7f3149fa7432d4f7ba38645d93249281869a536deef3dd9c6703da3b2",
+      "core_signature": "530f351886193364c8505c9406edb4bab84f1f0eb1224cf4c007d375841f2099"
+    },
+    {
+      "seed": "34",
+      "case_index": 0,
+      "case_seed": "44196409246260107000645759587487571095312329252305377147534655808481671728088",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 7,
+        "arbitration": 0,
+        "merged": 1
+      },
+      "reserved_load": 0.13274491465980828,
+      "config_semantic_sha256": "d14f4f6d0b918f534f89141f13a3cde0cb332cd6b0eeb27798595d5620d22e19",
+      "core_signature": "bc77b55bc06888698179d6aaeb9121972b63d80c1e509fec5eb313a0d9b22d29"
+    },
+    {
+      "seed": "35",
+      "case_index": 0,
+      "case_seed": "26644947817485712691646100993781448427364339349341880519921502220032468438450",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "multi_node_arbitration",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 8,
+        "arbitration": 2,
+        "merged": 0
+      },
+      "reserved_load": 0.1551705642565973,
+      "config_semantic_sha256": "ed952e5a3bde534cb7265867603c9f43dafc3ebb7a21028f11d0d0ede893c554",
+      "core_signature": "5b2d77b3d94fe0b86f53e6e3c7d9fd38d56eb499eb8ca910cc0d8de9aada2bf3"
+    },
+    {
+      "seed": "36",
+      "case_index": 0,
+      "case_seed": "48592417503748080714345044740654248904033701441270836546267372058755284933389",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_receivers",
+        "rx",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 7,
+        "arbitration": 0,
+        "merged": 3
+      },
+      "reserved_load": 0.21136980580496972,
+      "config_semantic_sha256": "1a2f379b9fc710216900d16fc3fb01254b2aae30da5a528daf12f3c2588c7c2f",
+      "core_signature": "67bffc2511bd2201eed538cc958a072ce339f9eaf6f2b5d7ad668eac92003e90"
+    },
+    {
+      "seed": "37",
+      "case_index": 0,
+      "case_seed": "58677951564758742199872780787032763161394197483241712905577102310071213514451",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "extended",
+        "merged",
+        "multiple_receivers",
+        "rx",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 7,
+        "arbitration": 0,
+        "merged": 1
+      },
+      "reserved_load": 0.17029387302467425,
+      "config_semantic_sha256": "1d5d7ada01b29408622459ab1be6a4a88512c0c48cb5faa7c2d7b2935f8e0c04",
+      "core_signature": "1569a6ec5e4a4aefffba7539328fbb02dae1d7f6e6ce64b7dec740814aabc409"
+    },
+    {
+      "seed": "38",
+      "case_index": 0,
+      "case_seed": "75432268217884854714599842015377991514923833290977004364970397264372051911626",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 14,
+        "arbitration": 1,
+        "merged": 1
+      },
+      "reserved_load": 0.2144359613586787,
+      "config_semantic_sha256": "e21633c07972718da6cd8527c9a2c2921e07707d7c281ecfba6d39a1dab430ee",
+      "core_signature": "e60f8e07b4ed753fe35b08e37e036d6fb46086cedb695180b11ffaa1380eb9af"
+    },
+    {
+      "seed": "39",
+      "case_index": 0,
+      "case_seed": "90947514013380612212318738800322041380881532582611073615290146294344416335510",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 3,
+        "arbitration": 2,
+        "merged": 3
+      },
+      "reserved_load": 0.3796458625525947,
+      "config_semantic_sha256": "df1e111ff07f91c4cb1b11f63456fa93f49a8afde2e776eced5077e0836972d9",
+      "core_signature": "576560c7d8b7e5965f7b533726ab4534278c61d796fe7870c66d179344979691"
+    },
+    {
+      "seed": "40",
+      "case_index": 0,
+      "case_seed": "20600437716181131876998198977149437786772852412002505771644762721888001923286",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 3,
+        "arbitration": 2,
+        "merged": 3
+      },
+      "reserved_load": 0.1828121393953381,
+      "config_semantic_sha256": "702f8baaf4a7ae05b8782b1f1e9547383b47d1ed84c040e56bfed79a0a1bb44e",
+      "core_signature": "110307d31fbfb566605bada2ada261710af0afabcaa3e1aa95e93a89f6b67b01"
+    },
+    {
+      "seed": "41",
+      "case_index": 0,
+      "case_seed": "41655000516760211535629552763928126718742076591299112066741814012802526863604",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 7,
+        "arbitration": 1,
+        "merged": 2
+      },
+      "reserved_load": 0.23365049584561778,
+      "config_semantic_sha256": "f73a9c6f6890d06b032064cfb9bde07c9fdc40521393cae7a9f911ff2e3ba6da",
+      "core_signature": "e3979ce467b2e97ff21a79280892798524986fcdc04e0f340a92cece794cac41"
+    },
+    {
+      "seed": "42",
+      "case_index": 0,
+      "case_seed": "17391920217154230408953631106579288266182361051968364217207410571673457395482",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_masters",
+        "rx",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 2,
+        "arbitration": 1,
+        "merged": 1
+      },
+      "reserved_load": 0.19369565217391305,
+      "config_semantic_sha256": "ebe0debbfbcffdddd46b58834c31b17a9021fa2ad9fd90e606f423b19a5e5b34",
+      "core_signature": "2dbddaed68c73c1c749030a6e26e977965c97e53f782f3fe9b866142e8e25103"
+    },
+    {
+      "seed": "43",
+      "case_index": 0,
+      "case_seed": "13003165675333496736256823680248158745273891386386111046694321035998020145628",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 10,
+        "arbitration": 1,
+        "merged": 2
+      },
+      "reserved_load": 0.20495300519416276,
+      "config_semantic_sha256": "9175e1aac4e4a2653886c2fbdbd1a3f9c0548dfdd7c5757e3c8be297c795b99e",
+      "core_signature": "ab945e42011a51c656316782fab6d2ea21f5abce81921cbe7c340c36dd7b5e57"
+    },
+    {
+      "seed": "44",
+      "case_index": 0,
+      "case_seed": "15330784853289829617946686557688471480560922900387033164108088373998688731458",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "multi_node_arbitration",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 5,
+        "arbitration": 2,
+        "merged": 0
+      },
+      "reserved_load": 0.055384804524219323,
+      "config_semantic_sha256": "0f66bea9610cf00c77fa556c8e681d15e63083ba7b7d34406c8035115960c31c",
+      "core_signature": "53469e4d3363d4b7e0968a93d7fc7a1898758af91e41fa4ece7bc00efc4bae32"
+    },
+    {
+      "seed": "45",
+      "case_index": 0,
+      "case_seed": "38753485466803716907221117631349277058380077372033060607265968755418363505246",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "merged",
+        "multi_node_arbitration",
+        "multiple_masters",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 4,
+        "arbitration": 0,
+        "merged": 1
+      },
+      "reserved_load": 0.17448586118251927,
+      "config_semantic_sha256": "6eea7aedcf2eee3f1b2a3110d4ae27ad10c16199a3633b403f67b54f9ce1a2d2",
+      "core_signature": "304c7cfa2c2717ad5341d8189b0666943fa944f9a53709922b3352c7977baa0c"
+    },
+    {
+      "seed": "46",
+      "case_index": 0,
+      "case_seed": "37744003923340427617228181077489196997558888311804171882090907552920078703719",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_masters",
+        "rx",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 1,
+        "arbitration": 1,
+        "merged": 1
+      },
+      "reserved_load": 0.07752808988764046,
+      "config_semantic_sha256": "368d57017f701153c515047b34760fbbc86fc39e7fc2a4694e0d94a652ce2463",
+      "core_signature": "b98cca2edc169cc73ac61c0baf06cf60a7a4de0afad5cf3ac8e98304eba8948f"
+    },
+    {
+      "seed": "47",
+      "case_index": 0,
+      "case_seed": "484482885483903115870617703833674127395731206599916436026887711449435342004",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 4,
+        "arbitration": 0,
+        "merged": 2
+      },
+      "reserved_load": 0.14946033696033695,
+      "config_semantic_sha256": "4e2155a42fe6a2e44b280ba26ca7527abcc9e89f4ec8d8c1ba11ddd36aa07951",
+      "core_signature": "6f3c9ec474476c4dc503ec8601fdf20f798880dcefe92ea34c923390d2ebc2ab"
+    },
+    {
+      "seed": "48",
+      "case_index": 0,
+      "case_seed": "25414459160792345872404296962725352720267923474628045202741476087692251074247",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "extended",
+        "merged",
+        "multiple_masters",
+        "rx",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 1,
+        "arbitration": 0,
+        "merged": 2
+      },
+      "reserved_load": 0.18154196733763767,
+      "config_semantic_sha256": "eea828f743c3f650854a872b9c4b5bfe291ca77c871883f5da1f0e1f4acd8f02",
+      "core_signature": "0e3520fa1667d25a0dde70bd10104d18712b1863755d8728e43473ac52211aa1"
+    },
+    {
+      "seed": "49",
+      "case_index": 0,
+      "case_seed": "19627982225038375586715841478889627958149467579097127133614914917517648780877",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "merged",
+        "multi_node_arbitration",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 2,
+        "arbitration": 0,
+        "merged": 2
+      },
+      "reserved_load": 0.12427818227466733,
+      "config_semantic_sha256": "ed0cd2badc33509b51b65ff50abcc5095ffb712f931294ca3f77af41a33c398e",
+      "core_signature": "87461f51ef028fa6d4693dd1855000d58aae6b4363d26ad5ceffb0b3ba606fb5"
+    },
+    {
+      "seed": "50",
+      "case_index": 0,
+      "case_seed": "15763032287034613260750025987158052754002263755542074518127134086374792483289",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multiple_receivers",
+        "rx",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 7,
+        "arbitration": 1,
+        "merged": 1
+      },
+      "reserved_load": 0.16628416440642604,
+      "config_semantic_sha256": "0888da9e3712eca017110b9ee916a22d6652cf56e620cd7858e7224ffbf26c69",
+      "core_signature": "3b952edc46864996be00d975895e7c67ff9df03dd8aea9ea8cf33c206f541b42"
+    },
+    {
+      "seed": "51",
+      "case_index": 0,
+      "case_seed": "5518057253227893096210623233917054637347341877960785844974364706094837123067",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 8,
+        "arbitration": 2,
+        "merged": 1
+      },
+      "reserved_load": 0.09626272595055059,
+      "config_semantic_sha256": "a9805d12181cdf897aeb134c17cdaa8cbaa02b4bc65935ea668642f27b38a23a",
+      "core_signature": "8f561fe7f95dc53a34b796a415284dcb9ff0c9c91472ce992bbad0c44d660035"
+    },
+    {
+      "seed": "52",
+      "case_index": 0,
+      "case_seed": "88836968367422373157101671387243247320060254052467558688019051567260059560834",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "high_load",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_receivers",
+        "rx",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 7,
+        "arbitration": 2,
+        "merged": 2
+      },
+      "reserved_load": 0.7262825732899023,
+      "config_semantic_sha256": "db7eaceb61c2a3d26aa7906073459fd8f6962a3c29c72b5a0ae17f1eb578b626",
+      "core_signature": "d7f385987acf7978bd3fd2bcdac124aa337adaedd7944eb4af3a500d51298dd9"
+    },
+    {
+      "seed": "53",
+      "case_index": 0,
+      "case_seed": "94890294433863847845153387116641815403236778433108328118835503588350917465094",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "extended",
+        "merged",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 5,
+        "arbitration": 0,
+        "merged": 1
+      },
+      "reserved_load": 0.07315079689415611,
+      "config_semantic_sha256": "6906a8e90476e743a79c49a619677b39dce933264c5917a8e17c31a70dae3532",
+      "core_signature": "ed67695bf0e148d50c9322d61364c4c8c0dafaf81f925d76c4443b75723589ec"
+    },
+    {
+      "seed": "54",
+      "case_index": 0,
+      "case_seed": "100927882314183077923677161346481822426774397473614281846100235793185309276543",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "multi_node_arbitration",
+        "multiple_masters",
+        "rx",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 2,
+        "arbitration": 1,
+        "merged": 0
+      },
+      "reserved_load": 0.06848092795003347,
+      "config_semantic_sha256": "e84c6d09467a308aa6bf81a0790bccfd971b9512c81b691c4343aaf551ab8da4",
+      "core_signature": "a9d8b5a11bd970a8bee43ba1976555304bbe69940cade852f61cd90d7fa1c1c6"
+    },
+    {
+      "seed": "55",
+      "case_index": 0,
+      "case_seed": "22589230588309554304886148982110930475110690136974119825644739892883035650899",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 9,
+        "arbitration": 1,
+        "merged": 0
+      },
+      "reserved_load": 0.1994924486258975,
+      "config_semantic_sha256": "6be9119f4cf70cadf89cd78883f07efc48968cfd07e5a28ddfb2fb0e9bbb6009",
+      "core_signature": "bbba36548df420c10a88521e6e62d2e9b7d013409ec75204887a353ded1f5f5b"
+    },
+    {
+      "seed": "56",
+      "case_index": 0,
+      "case_seed": "31144055222349268929799983504678620351113335615632007878634651688406034888830",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 8,
+        "arbitration": 1,
+        "merged": 0
+      },
+      "reserved_load": 0.13187878787878787,
+      "config_semantic_sha256": "5012f0569294b9b7f39b518956b18a617d206fb61f62c3cfd2c7c4ecb388ba6a",
+      "core_signature": "e86bca0b58b9d27273f1bf03afced84274995df9b276958d5eb961fa82ecd0be"
+    },
+    {
+      "seed": "57",
+      "case_index": 0,
+      "case_seed": "20335138713851140741004404369664107741454435500329144911118536312698438983110",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 3,
+        "arbitration": 1,
+        "merged": 1
+      },
+      "reserved_load": 0.11223868479805155,
+      "config_semantic_sha256": "969a677722ff87ef00afeac78a50eb7740b536d58d043c37e665b1d5904e5273",
+      "core_signature": "49df6242eff6e795c00266c158da5452232d2581c1e6ef68520fa16cec3eb663"
+    },
+    {
+      "seed": "58",
+      "case_index": 0,
+      "case_seed": "112332506855168693382184109263589933312022565786030227457215692660230360029001",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "merged",
+        "multiple_masters",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 5,
+        "arbitration": 0,
+        "merged": 1
+      },
+      "reserved_load": 0.07757514662756598,
+      "config_semantic_sha256": "274e4a3cdf6610cb1bf073cbb7dcc3e057389a0c4690dd683c36ba6bcae71a09",
+      "core_signature": "69db932a7ca56684e0031172645ccad86c03c3712fb35c4bf1f8de826cb168c7"
+    },
+    {
+      "seed": "59",
+      "case_index": 0,
+      "case_seed": "29839019211971032295025264894601468551651682219195382078564759777217845927829",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_receivers",
+        "rx",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 3,
+        "arbitration": 1,
+        "merged": 2
+      },
+      "reserved_load": 0.15914130215682323,
+      "config_semantic_sha256": "3c5066ad40fc72a768d2c001f5c668b8449e0386870c521547ae202530b777cf",
+      "core_signature": "a3234955465aa87984f28b9417307eb9ce775ce55fad00809c74fc8448d5b03d"
+    },
+    {
+      "seed": "60",
+      "case_index": 0,
+      "case_seed": "92224302996280693682606437873392879730628776822312538730608664133885482208329",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "multi_node_arbitration",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 10,
+        "arbitration": 1,
+        "merged": 0
+      },
+      "reserved_load": 0.13572522982635343,
+      "config_semantic_sha256": "74a192258b2712d7dfb7f7580c015b7328b7557d8e9fed51ceb2ddff6f8a7b80",
+      "core_signature": "728370728c29604306b2f3f8b9d1db5898398bc549f07b08db3465ec4cc61034"
+    },
+    {
+      "seed": "61",
+      "case_index": 0,
+      "case_seed": "53465519888829434810816397645042145952965221741787566453795131608023480255856",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 6,
+        "arbitration": 1,
+        "merged": 1
+      },
+      "reserved_load": 0.11433668076109936,
+      "config_semantic_sha256": "35e6a34b93de1db1eccd6f8d8ac328be066124003bf00352fa5e9a67d58c5d19",
+      "core_signature": "1e1b5210d9b02e2cc539efd2f53a4387853c157ea8dbeec9c4a0a5ada33d0222"
+    },
+    {
+      "seed": "62",
+      "case_index": 0,
+      "case_seed": "21227746861040964713825529628918889987892524730787418649747578217000260885624",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 8,
+        "arbitration": 1,
+        "merged": 1
+      },
+      "reserved_load": 0.33435960591133007,
+      "config_semantic_sha256": "224015fc9a1d8799c468e6a9967dad7a837a94e83862bd35b715730782de9ec2",
+      "core_signature": "067986d418e9de6370aea78fffdd733f823b5b631907345d7ca3f3a0e136dce3"
+    },
+    {
+      "seed": "63",
+      "case_index": 0,
+      "case_seed": "66191789440694622728064039798802075109031416882770446315735221314210775048605",
+      "success": true,
+      "failed_attempts": 1,
+      "issue_counts": {
+        "RX_ARBITRATION_UNCERTAIN": 4
+      },
+      "attempt": 1,
+      "features": [
+        "arbitration",
+        "multiple_masters",
+        "rx",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 3,
+        "arbitration": 1,
+        "merged": 0
+      },
+      "reserved_load": 0.03373481501932634,
+      "config_semantic_sha256": "7e2cc82c0b4ce315458f499c291337b1360cdea2120b4945dce8f44b311d21d3",
+      "core_signature": "98e66864caad8aca154c16b3274e67f07d3646452dcd866eda3a6a68c535882a"
+    },
+    {
+      "seed": "64",
+      "case_index": 0,
+      "case_seed": "90166169047780132384862064707246727306104423665921168044583388340006482891913",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 1,
+        "arbitration": 0,
+        "merged": 2
+      },
+      "reserved_load": 0.06293919951115184,
+      "config_semantic_sha256": "5d38b29bf979da9cb2c603e6521d2f87d7d2ee0231b88d7d0a642f0ce5a82287",
+      "core_signature": "113c824777c44a31e98d614538adc06a391758dce6ab4378f97ae5f1db48174c"
+    },
+    {
+      "seed": "65",
+      "case_index": 0,
+      "case_seed": "74879946178569651592967902212655678429276509625434295661116233200562553572530",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 5,
+        "arbitration": 2,
+        "merged": 1
+      },
+      "reserved_load": 0.08943053596614951,
+      "config_semantic_sha256": "4f6c651b6bc07ca700cb5205370b00ad24261904127ef3bda5607a4a7337426e",
+      "core_signature": "b64aabbaf9371b5a4e6ca095573d974d4768382fb44c9d0526176a971b04776c"
+    },
+    {
+      "seed": "66",
+      "case_index": 0,
+      "case_seed": "83647814814188206113004125678031049578547361003381973351439904811053657690766",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_receivers",
+        "rx",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 4,
+        "arbitration": 2,
+        "merged": 1
+      },
+      "reserved_load": 0.23016914552347623,
+      "config_semantic_sha256": "5ee7745627815d044fc08d8dd94ec020912781e03e7ce93049bd479d1da5666d",
+      "core_signature": "0067a7cbd800240630fc49506f65a89a00a3b706692570ea95356790e102a0c9"
+    },
+    {
+      "seed": "67",
+      "case_index": 0,
+      "case_seed": "36062590454685844443051125654022758666466026056101581584685377999772375337227",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "merged",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 7,
+        "arbitration": 0,
+        "merged": 2
+      },
+      "reserved_load": 0.07761595022624435,
+      "config_semantic_sha256": "b4453783f8763477d8b69f75f58f151f97bb1ab1b0f44e9fc4943b4492b7dd5a",
+      "core_signature": "4fc0d500bf527074b7b9613e43780f25d57bb2a56eb360c9a9cafd7fbcb47a43"
+    },
+    {
+      "seed": "68",
+      "case_index": 0,
+      "case_seed": "106807853450820712507695872617959791531035989182492930119957661255363172723289",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 12,
+        "arbitration": 1,
+        "merged": 1
+      },
+      "reserved_load": 0.30638013505908834,
+      "config_semantic_sha256": "023956c44f210ea461378e26498b60f04ba444f7f206cae1d5df0a41aa01afcd",
+      "core_signature": "d5a035b7448349136c113d9bf7554d5d719f6f8d4a417e43f238d39e373fc285"
+    },
+    {
+      "seed": "69",
+      "case_index": 0,
+      "case_seed": "22399463985595994136398060791781576415636539359476647880615110389433766118230",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_receivers",
+        "rx",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 6,
+        "arbitration": 1,
+        "merged": 1
+      },
+      "reserved_load": 0.32003228120516497,
+      "config_semantic_sha256": "f4de17d1c91d7c675eef0cdabe74e1ac68fff1289812499ab1224e0b0c24377b",
+      "core_signature": "e1f3e8b0c53fe8a0aa89aa53a4ecca58cfa19a5c56fefeac0236cc19d8046105"
+    },
+    {
+      "seed": "70",
+      "case_index": 0,
+      "case_seed": "7502310697686390303490764420641007213167881676748285226715642874355742051999",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_receivers",
+        "rx",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 5,
+        "arbitration": 0,
+        "merged": 1
+      },
+      "reserved_load": 0.11814798105120686,
+      "config_semantic_sha256": "71c6bf4a2ffadb5b3273ba543de2a4600d4f6f2db7d0059d149a50f105bceda6",
+      "core_signature": "55cbd48f95e8ee0e660c3263a748dbdfda39091c33683c28242767b0a4fb0cc6"
+    },
+    {
+      "seed": "71",
+      "case_index": 0,
+      "case_seed": "56282927227570048092121410938153734245160337582095848084839951064252556880809",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 8,
+        "arbitration": 1,
+        "merged": 1
+      },
+      "reserved_load": 0.15359204131227217,
+      "config_semantic_sha256": "58b135aa99a9377d84b0c7218711bf47174990ddeb8de7c55adfe7ee1d75ff31",
+      "core_signature": "8ea6f0cd74facc460e6abe7617fe1e6628d35d3ce7a06a87a5fa5d9700780330"
+    },
+    {
+      "seed": "72",
+      "case_index": 0,
+      "case_seed": "9077839173679792392178252033232225987235501254178016220192209325014787262563",
+      "success": true,
+      "failed_attempts": 1,
+      "issue_counts": {
+        "RX_ARBITRATION_UNCERTAIN": 2
+      },
+      "attempt": 1,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 2,
+        "arbitration": 1,
+        "merged": 2
+      },
+      "reserved_load": 0.06613203161320316,
+      "config_semantic_sha256": "0a458ec41938d0b074e1a40abebac741111793402dec3af2ae6cf14de5f4e0c4",
+      "core_signature": "ba3558192a0609a92abd0e48a99ee654afb3bdd1ac73ec30ab27ef645b102560"
+    },
+    {
+      "seed": "73",
+      "case_index": 0,
+      "case_seed": "60506731468266268521846360172947034817154183419516088048333047082677871466289",
+      "success": true,
+      "failed_attempts": 1,
+      "issue_counts": {
+        "RX_ARBITRATION_UNCERTAIN": 2
+      },
+      "attempt": 1,
+      "features": [
+        "merged",
+        "multi_node_arbitration",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 13,
+        "arbitration": 0,
+        "merged": 1
+      },
+      "reserved_load": 0.1656888459414688,
+      "config_semantic_sha256": "393223ab009d514d9378d092c8b310ca0c01e0a5339e6249ea187d950141d437",
+      "core_signature": "a97d16ccf655959c0c12003dd407eca89711b691fa9f9db0fb95e3a3edd49bf5"
+    },
+    {
+      "seed": "74",
+      "case_index": 0,
+      "case_seed": "13739976242790084870934256008525907685824166728343178575859256454443677458581",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 6,
+        "arbitration": 0,
+        "merged": 3
+      },
+      "reserved_load": 0.2524934478741992,
+      "config_semantic_sha256": "8e3b5aa6be9a86ad20f14930ff83355ea92edb1dcd85d0e3ee8d2a2f44e4d92f",
+      "core_signature": "0759e004b907356b43ba5c76dba0c1cbb8ffa9039cde2cef3a4d348198261785"
+    },
+    {
+      "seed": "75",
+      "case_index": 0,
+      "case_seed": "78440833880127656272788338522778331147762137014943775258260235687744921132668",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multiple_receivers",
+        "rx",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 4,
+        "arbitration": 1,
+        "merged": 4
+      },
+      "reserved_load": 0.2676042862610027,
+      "config_semantic_sha256": "01c0be828385392f28251e2037fcc42a213cee0559de801163a05c4adc2bec17",
+      "core_signature": "197b3d027dcf64bf1ac5175eb09d4e6e5bd3debc656ba6855e6136bc9fafe23b"
+    },
+    {
+      "seed": "76",
+      "case_index": 0,
+      "case_seed": "35842556882507450939818006277487387038624652963421445244775302842353757959146",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 6,
+        "arbitration": 1,
+        "merged": 2
+      },
+      "reserved_load": 0.25948628137769997,
+      "config_semantic_sha256": "9ea9b7bc8cfeb6fd9dd530a859b6eafd2dd99f015c2bb862f6d0dd9a9bc0f61b",
+      "core_signature": "b729abc0c8834971bb503c9de1eb52daa652b25eb7b12ec529175fec23eeefb2"
+    },
+    {
+      "seed": "77",
+      "case_index": 0,
+      "case_seed": "66403074484273660154364837654443689472386448726690545705740933307058481866301",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "multi_node_arbitration",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 4,
+        "arbitration": 1,
+        "merged": 0
+      },
+      "reserved_load": 0.1363161039737078,
+      "config_semantic_sha256": "2d2948f5a241046116bd1b165ee74938a21bac5a39e8f8a7abb89c40f9475135",
+      "core_signature": "847e765aaabc1dd6cfe894f61bcb18790a2416bea3c69834af8612338fc5f7f2"
+    },
+    {
+      "seed": "78",
+      "case_index": 0,
+      "case_seed": "28028757904940150543530871434527267206888450787332653699754966349502451182368",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 6,
+        "arbitration": 2,
+        "merged": 2
+      },
+      "reserved_load": 0.27250622031214655,
+      "config_semantic_sha256": "d1998ac766e9b12d7d18d396b8f205f74c9139e8fa6e63e40de01851365b10b8",
+      "core_signature": "45b70346b55785e1e05553fbe9494f58e8b29cf966d2081dc32370c0bbd805af"
+    },
+    {
+      "seed": "79",
+      "case_index": 0,
+      "case_seed": "108539982834035266367791353762689537722762998392164323476957982333215227913125",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 4,
+        "arbitration": 1,
+        "merged": 3
+      },
+      "reserved_load": 0.21634191176470588,
+      "config_semantic_sha256": "461bb473a0b814141c023c1da3fbfc043212331201802cf24e1515523ebc4d24",
+      "core_signature": "004971a57f9360d43f8eb33af238e747e74c70662744f4707550a263b03204f4"
+    },
+    {
+      "seed": "80",
+      "case_index": 0,
+      "case_seed": "78224094683721658842499724540246268875583106938142968884933336340008842101522",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 2,
+        "arbitration": 2,
+        "merged": 3
+      },
+      "reserved_load": 0.3066460741331208,
+      "config_semantic_sha256": "f59d56420a41a949413572090aa5cfa04cf61da5d137a0ad6221c287cbaa3977",
+      "core_signature": "74cc3916868af8e6054f0c57c6bac42eaf843b551eade1ad126340541b16f2b1"
+    },
+    {
+      "seed": "81",
+      "case_index": 0,
+      "case_seed": "13432009787110446943917231293341013263050015959250780045045308679646679510672",
+      "success": true,
+      "failed_attempts": 1,
+      "issue_counts": {
+        "RX_ARBITRATION_UNCERTAIN": 8
+      },
+      "attempt": 1,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 7,
+        "arbitration": 1,
+        "merged": 1
+      },
+      "reserved_load": 0.20121830427892234,
+      "config_semantic_sha256": "98b1f352f9a65f9ad3bd5ec93fc9951471537270b892dddf089dc2541114ac33",
+      "core_signature": "432cef3c79072d57ddc3405a646b91ad899be009af4b9a7226f916e7ad351dad"
+    },
+    {
+      "seed": "82",
+      "case_index": 0,
+      "case_seed": "39278808338325726342436532367691974625596762257679679617749313814839735119584",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "extended",
+        "merged",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 9,
+        "arbitration": 0,
+        "merged": 1
+      },
+      "reserved_load": 0.13052312271062272,
+      "config_semantic_sha256": "73f39beda83f70653cffd58b0c7ce51aca9b50464ae1970cb2b84d21fcd372ba",
+      "core_signature": "1c3723dc55a11a2b71ddd8cc03377a81f05cfbc3ed19ab3b8b446b88ef4691cb"
+    },
+    {
+      "seed": "83",
+      "case_index": 0,
+      "case_seed": "26962573817866919190964280063594126237030232991971671889728797558082722825207",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 7,
+        "arbitration": 2,
+        "merged": 1
+      },
+      "reserved_load": 0.1813380281690141,
+      "config_semantic_sha256": "803e59dae3cff468bec023a323adcbc2ecca91f564609bf062d376f0023da543",
+      "core_signature": "f29cd999fe6b4e53f05b9f9969a5b3204a048a9ff28437999f0d1f4b128bbb41"
+    },
+    {
+      "seed": "84",
+      "case_index": 0,
+      "case_seed": "104193681413081597775359233008140140790268135825333766468397119836818604452113",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 3,
+        "arbitration": 1,
+        "merged": 1
+      },
+      "reserved_load": 0.10911945958758,
+      "config_semantic_sha256": "e30924f7f020141f0c2db120257daed35b9ebb1cea1adb59a6e71a50c9014662",
+      "core_signature": "c25ddf05b6188e4eb380f38eb71427eb515eb67c74faadb75839784c22303070"
+    },
+    {
+      "seed": "85",
+      "case_index": 0,
+      "case_seed": "77742512251423850950507176240174788643221604319771402153642044457967408836571",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "extended",
+        "merged",
+        "rx",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 2,
+        "arbitration": 0,
+        "merged": 2
+      },
+      "reserved_load": 0.14277541680287675,
+      "config_semantic_sha256": "360a13094b4b867320c1b52c112f574d820dec29b0813fb04b65f92eecb1cf36",
+      "core_signature": "4ee68be785f2ac282e4523df2c16edd80f6c4f3e7d97c93ea1ef5b5cf6187dfe"
+    },
+    {
+      "seed": "86",
+      "case_index": 0,
+      "case_seed": "17729489660019494793768818863936326184051129660063456322239747065393207230016",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "multi_node_arbitration",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 10,
+        "arbitration": 2,
+        "merged": 0
+      },
+      "reserved_load": 0.2797121634168988,
+      "config_semantic_sha256": "f68c25fdefce302cbea9ccbf777bd55222ad0507cdb42670b637ca6ca9fa7c1f",
+      "core_signature": "2ee6c179a41c6576f08445d75cf30d2bdf4cbf04c4c0461d34bceef9bf229240"
+    },
+    {
+      "seed": "87",
+      "case_index": 0,
+      "case_seed": "51362994490625660703925458248722112786812967840165952841413258725994462164308",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "extended",
+        "merged",
+        "multiple_masters",
+        "rx",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 3,
+        "arbitration": 0,
+        "merged": 1
+      },
+      "reserved_load": 0.05749124151521787,
+      "config_semantic_sha256": "b6e4788ae58db5c6895fe4531df6a2faf4558986ee1e5e078ca4a486d3b4b17a",
+      "core_signature": "3aaea9016ac977aa044966f06f02da2042cd2c166d22d19a91a8e91e0c3432fb"
+    },
+    {
+      "seed": "88",
+      "case_index": 0,
+      "case_seed": "45477426656009217636476225487987665139547629306316989105342803805405265229574",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 6,
+        "arbitration": 2,
+        "merged": 1
+      },
+      "reserved_load": 0.06352699530516431,
+      "config_semantic_sha256": "6e569196e844a28bdab6cbf333f95bbafdadb6e2c00f2636a8dc37b119f3ecd7",
+      "core_signature": "3834daaac31fca4c6a582c89c9a1ec41b26daea595fe896e1cc35bf7bad563d1"
+    },
+    {
+      "seed": "89",
+      "case_index": 0,
+      "case_seed": "105787366758195452984730177648567335042989887888191025676608933443298942409211",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 4,
+        "arbitration": 2,
+        "merged": 1
+      },
+      "reserved_load": 0.23316744730679156,
+      "config_semantic_sha256": "b85be94b31c7c63c8240f5a99574b07d81d13abbe9c5add99ee8d181efbda98b",
+      "core_signature": "dfad31d8d2e9d2c4ee090cc05fb5584038b64fd692fc9067dc11801e2cae0400"
+    },
+    {
+      "seed": "90",
+      "case_index": 0,
+      "case_seed": "73665393614454061038828740440885042038597736599410649248109075410275601940276",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 3,
+        "arbitration": 1,
+        "merged": 1
+      },
+      "reserved_load": 0.022579747774480713,
+      "config_semantic_sha256": "a7676cbbf2aefa58c6f009a87d34a0fde12edbd5f2a3e1037857267c6c5c2813",
+      "core_signature": "63a4840b0eebe8d5c200421c0a06a637b5c7fca8d004ef11df333388bc8a76b7"
+    },
+    {
+      "seed": "91",
+      "case_index": 0,
+      "case_seed": "103681751740681098015928630170795841645955508617011808415857451523058658387887",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 7,
+        "arbitration": 0,
+        "merged": 2
+      },
+      "reserved_load": 0.2623451479697178,
+      "config_semantic_sha256": "c1710839881c32b5b7ce0fc38e16bb6735a3ea8b7f6c51c744d779ef422ae2a0",
+      "core_signature": "6b9aec016bc3cd45d2dd9e495a34b150f9c26c3e3f9a822b86ecec510d44c81b"
+    },
+    {
+      "seed": "92",
+      "case_index": 0,
+      "case_seed": "32969419245917982824895071089867367368108409435116205049221966937557617135876",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 4,
+        "arbitration": 2,
+        "merged": 4
+      },
+      "reserved_load": 0.25,
+      "config_semantic_sha256": "f0b99121e41b7696846b76ac0a03bee63446e8357ce8012de84f2e14fc7fa055",
+      "core_signature": "c9533b7e19bae8dc8dd36513ccfdfa88bfe2a69a576368e118da0202fba9aec5"
+    },
+    {
+      "seed": "93",
+      "case_index": 0,
+      "case_seed": "92247911549241244194595295948294835955051217050962003479863096155564945899316",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 7,
+        "arbitration": 2,
+        "merged": 1
+      },
+      "reserved_load": 0.33038827258320125,
+      "config_semantic_sha256": "bc7da01ceded1ee6ebbc813510417491da704de6b491f59d32653df116cc6597",
+      "core_signature": "9cdc5045a400ba388350ecc5b7bf1863fa479c4b9c19a5ae107cec9b4ca5bbfe"
+    },
+    {
+      "seed": "94",
+      "case_index": 0,
+      "case_seed": "87695188432203837903226948184385322692415265000221088077535382190632049573441",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 4,
+        "arbitration": 1,
+        "merged": 1
+      },
+      "reserved_load": 0.11623816832949603,
+      "config_semantic_sha256": "6b07944bfda46688ed852b0b7fb28ddccb5f656db747e2f8353031cdac04e7d0",
+      "core_signature": "04e3b44eb35051422453745c54c333db91df83c2f4794643ea06a6ee3b1f5f16"
+    },
+    {
+      "seed": "95",
+      "case_index": 0,
+      "case_seed": "3172320621265158714339784336004401796507215921969069002267507425196512976143",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "multiple_masters",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 4,
+        "arbitration": 3,
+        "merged": 0
+      },
+      "reserved_load": 0.1147839109970047,
+      "config_semantic_sha256": "66680d336fd8374af6ef54c7e9059b2c6e9621be944ace95e60d562717aca954",
+      "core_signature": "ab20afe1a49d565969fe642dd907e0fb45df6a993c60359ace1c92819a733fe1"
+    },
+    {
+      "seed": "96",
+      "case_index": 0,
+      "case_seed": "114789186016735045620145845888457272426728004783351620631000152939658774245325",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_masters",
+        "rx",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 1,
+        "arbitration": 1,
+        "merged": 1
+      },
+      "reserved_load": 0.10904255319148937,
+      "config_semantic_sha256": "8f8e075f262d2c5e8f87d56d567d5c18dc8b46b9e87fd4556769b4f5e9fe82df",
+      "core_signature": "06d3587532f2d94ed4507519ed868d7b224ea2893fb208e8583a47d63a232425"
+    },
+    {
+      "seed": "97",
+      "case_index": 0,
+      "case_seed": "99713582173992712612388480676529920085530137478482024656011088022474549735280",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_receivers",
+        "rx",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 2,
+        "arbitration": 1,
+        "merged": 1
+      },
+      "reserved_load": 0.09611013986013986,
+      "config_semantic_sha256": "5e629806f6ca6cfe125ab3b8d81ee3bb9cc140c762432c4513f6cf6931cfc2ed",
+      "core_signature": "e282ca8192c43aaabf2916a991b6bab886e606fb821893cfc04c2c639a651c10"
+    },
+    {
+      "seed": "98",
+      "case_index": 0,
+      "case_seed": "33219375453968432663603684766333931820945620075359187751465405804699573318702",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "multi_node_arbitration",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "shared_time",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 6,
+        "arbitration": 2,
+        "merged": 0
+      },
+      "reserved_load": 0.24002659574468085,
+      "config_semantic_sha256": "3a358fff48ec080db0e3e797151c71faa5a49d8ad596f16ef85c80d4f8206619",
+      "core_signature": "6fbcefcb6ef7038dbd3b2af2d542a3df463a772da067443797b4aa51a9052e5c"
+    },
+    {
+      "seed": "99",
+      "case_index": 0,
+      "case_seed": "76484748263409892159449210789009236889202131729239224349475576832899774830625",
+      "success": true,
+      "failed_attempts": 0,
+      "issue_counts": {},
+      "attempt": 0,
+      "features": [
+        "arbitration",
+        "extended",
+        "merged",
+        "multi_node_arbitration",
+        "multiple_masters",
+        "multiple_receivers",
+        "rx",
+        "shared_mnr",
+        "single"
+      ],
+      "logical_window_counts": {
+        "single": 11,
+        "arbitration": 2,
+        "merged": 1
+      },
+      "reserved_load": 0.22258823529411764,
+      "config_semantic_sha256": "b66197b4555a2878ccc6010d183a7fe2a320b0f1dc0b0bbb13af704025e2b4cf",
+      "core_signature": "8c41e25aa9aa2d5508df807d40ae8953277e947e7132665466c80dd47678308b"
+    }
+  ],
+  "protocol_conformance_claim": false,
+  "scope": "In-memory candidate compilation and replay; no sample configs are published by this regression"
+}

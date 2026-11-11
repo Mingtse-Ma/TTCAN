@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "metadata": {
+    "source": "Deterministic automatic-placement example"
+  },
+  "network": {
+    "matrix_cycles": 4,
+    "actual_master": "Node0"
+  },
+  "node_defaults": {
+    "tx_message_capacity": 8,
+    "rx_std_filter_capacity": 8,
+    "rx_ext_filter_capacity": 0,
+    "trigger_capacity": 16
+  },
+  "nodes": [
+    {
+      "node_id": "Node0",
+      "role": "master",
+      "master_priority": 0
+    },
+    {
+      "node_id": "Node1",
+      "role": "slave"
+    },
+    {
+      "node_id": "Node2",
+      "role": "slave"
+    }
+  ],
+  "messages": [
+    {
+      "name": "Fast",
+      "can_id": "0x201",
+      "sender": "Node0",
+      "period_cycles": 1,
+      "receivers": [
+        {
+          "node_id": "Node1",
+          "check_reception": true
+        }
+      ]
+    },
+    {
+      "name": "Medium",
+      "can_id": "0x202",
+      "sender": "Node1",
+      "period_cycles": 2,
+      "phase": 0,
+      "receivers": [
+        {
+          "node_id": "Node0",
+          "check_reception": true
+        }
+      ]
+    },
+    {
+      "name": "Slow",
+      "can_id": "0x203",
+      "sender": "Node2",
+      "period_cycles": 4,
+      "phase": 1,
+      "receivers": [
+        {
+          "node_id": "Node0",
+          "check_reception": true
+        }
+      ]
+    }
+  ]
+}

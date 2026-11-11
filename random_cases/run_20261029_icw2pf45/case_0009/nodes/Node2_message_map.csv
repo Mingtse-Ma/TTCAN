@@ -1,0 +1,8 @@
+message_name,can_id,direction,resource_type,mnr,peer
+Msg000,0x155AA194,rx,rx_ext_filter,6,Node0
+Msg001,0x51B,rx,rx_std_filter,6,Node1
+Msg003,0x4D6960D,rx,rx_ext_filter,0,Node1
+Msg004,0x5AE9A0F,tx,tx_buffer,0,"Node0,Node3"
+Msg008,0x38A,tx,tx_buffer,2,Node1
+Msg009,0x85E1478,tx,tx_buffer,1,"Node0,Node1"
+Msg013,0x53F,rx,rx_std_filter,7,Node4

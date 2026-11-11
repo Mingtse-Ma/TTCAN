@@ -1,0 +1,26 @@
+node_id,alias,time_mark_ntu,period_cycles,phase,mnr,resource_type,message_name,can_id,window_id,group_id,time_label,state,trigger_index,active_cycles,type_code,type_name,cycle_code
+Node0,single,678,2,1,2,tx_buffer,Msg000,0x474,Msg000_0,,,both,0,"[1, 3]",0x2,Tx_Trigger_Single,0b0000011
+Node0,single,852,2,1,1,tx_buffer,Msg001,0x108,Msg001_0,,,both,1,"[1, 3]",0x2,Tx_Trigger_Single,0b0000011
+Node0,rx,1098,1,0,0,rx_ext_filter,Msg002,0x1C88A9BB,,,,both,2,"[0, 1, 2, 3]",0x8,Rx_Trigger,0b0000000
+Node0,rx,1192,4,3,0,rx_std_filter,Msg003,0x51F,,,,both,3,[3],0x8,Rx_Trigger,0b0000111
+Node0,arbi,1222,1,0,0,tx_buffer,Msg004,0x186,ZArbi000,ZArbi000,,both,4,"[0, 1, 2, 3]",0x4,Tx_Trigger_Arbitration,0b0000000
+Node0,ref,2621,,,,,,,,,,normal,5,"[0, 1, 2, 3]",0x0,Tx_Ref_Trigger,
+Node0,watch,2923,,,,,,,,,,normal,6,"[0, 1, 2, 3]",0x6,Watch_Trigger,
+Node0,end,,,,,,,,,,,padding,7,[],0xA,End_of_List,
+Node0,end,,,,,,,,,,,padding,8,[],0xA,End_of_List,
+Node0,end,,,,,,,,,,,padding,9,[],0xA,End_of_List,
+Node0,end,,,,,,,,,,,padding,10,[],0xA,End_of_List,
+Node0,end,,,,,,,,,,,padding,11,[],0xA,End_of_List,
+Node0,end,,,,,,,,,,,padding,12,[],0xA,End_of_List,
+Node0,end,,,,,,,,,,,padding,13,[],0xA,End_of_List,
+Node0,end,,,,,,,,,,,padding,14,[],0xA,End_of_List,
+Node0,end,,,,,,,,,,,padding,15,[],0xA,End_of_List,
+Node0,end,,,,,,,,,,,padding,16,[],0xA,End_of_List,
+Node0,end,,,,,,,,,,,padding,17,[],0xA,End_of_List,
+Node0,end,,,,,,,,,,,padding,18,[],0xA,End_of_List,
+Node0,end,,,,,,,,,,,padding,19,[],0xA,End_of_List,
+Node0,end,,,,,,,,,,,padding,20,[],0xA,End_of_List,
+Node0,end,,,,,,,,,,,padding,21,[],0xA,End_of_List,
+Node0,end,,,,,,,,,,,padding,22,[],0xA,End_of_List,
+Node0,end,,,,,,,,,,,padding,23,[],0xA,End_of_List,
+Node0,end,,,,,,,,,,,padding,24,[],0xA,End_of_List,

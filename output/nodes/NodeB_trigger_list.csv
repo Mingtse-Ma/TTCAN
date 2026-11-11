@@ -1,0 +1,17 @@
+node_id,alias,time_mark_ntu,period_cycles,phase,mnr,resource_type,message_name,can_id,window_id,group_id,time_label,state,trigger_index,active_cycles,type_code,type_name,cycle_code
+NodeB,single,200,64,1,0,tx_buffer,Msg3,0x103,Msg3_0,,T0,both,0,[1],0x2,Tx_Trigger_Single,0b1000001
+NodeB,rx,600,4,0,0,rx_std_filter,Msg7,0x107,,,Mark2,both,1,"[0, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60]",0x8,Rx_Trigger,0b0000100
+NodeB,rx,600,64,3,0,rx_std_filter,Msg7,0x107,,,Mark2,both,2,[3],0x8,Rx_Trigger,0b1000011
+NodeB,single,800,64,3,1,tx_buffer,Msg5,0x105,Msg5_0,,T23,both,3,[3],0x2,Tx_Trigger_Single,0b1000011
+NodeB,single,1200,64,4,2,tx_buffer,Msg6,0x106,Msg6_0,,T34,both,4,[4],0x2,Tx_Trigger_Single,0b1000100
+NodeB,watch,2300,,,,,,,,,Mark7,normal,5,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63]",0x6,Watch_Trigger,
+NodeB,end,,,,,,,,,,,padding,6,[],0xA,End_of_List,
+NodeB,end,,,,,,,,,,,padding,7,[],0xA,End_of_List,
+NodeB,end,,,,,,,,,,,padding,8,[],0xA,End_of_List,
+NodeB,end,,,,,,,,,,,padding,9,[],0xA,End_of_List,
+NodeB,end,,,,,,,,,,,padding,10,[],0xA,End_of_List,
+NodeB,end,,,,,,,,,,,padding,11,[],0xA,End_of_List,
+NodeB,end,,,,,,,,,,,padding,12,[],0xA,End_of_List,
+NodeB,end,,,,,,,,,,,padding,13,[],0xA,End_of_List,
+NodeB,end,,,,,,,,,,,padding,14,[],0xA,End_of_List,
+NodeB,end,,,,,,,,,,,padding,15,[],0xA,End_of_List,

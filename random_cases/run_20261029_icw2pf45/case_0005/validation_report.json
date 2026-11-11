@@ -1,0 +1,106 @@
+{
+  "valid": true,
+  "errors": 0,
+  "warnings": 0,
+  "issues": [],
+  "resources": {
+    "Node0": {
+      "tx_buffer": {
+        "used": 3,
+        "capacity": 12,
+        "remaining": 9
+      },
+      "rx_std_filter": {
+        "used": 3,
+        "capacity": 9,
+        "remaining": 6
+      },
+      "rx_ext_filter": {
+        "used": 3,
+        "capacity": 5,
+        "remaining": 2
+      },
+      "trigger_memory": {
+        "used": 5,
+        "capacity": 37,
+        "remaining": 32
+      },
+      "expected_data_tx_triggers_per_matrix": 20
+    },
+    "Node1": {
+      "tx_buffer": {
+        "used": 3,
+        "capacity": 13,
+        "remaining": 10
+      },
+      "rx_std_filter": {
+        "used": 4,
+        "capacity": 8,
+        "remaining": 4
+      },
+      "rx_ext_filter": {
+        "used": 0,
+        "capacity": 12,
+        "remaining": 12
+      },
+      "trigger_memory": {
+        "used": 6,
+        "capacity": 33,
+        "remaining": 27
+      },
+      "expected_data_tx_triggers_per_matrix": 3
+    },
+    "Node2": {
+      "tx_buffer": {
+        "used": 3,
+        "capacity": 11,
+        "remaining": 8
+      },
+      "rx_std_filter": {
+        "used": 3,
+        "capacity": 11,
+        "remaining": 8
+      },
+      "rx_ext_filter": {
+        "used": 2,
+        "capacity": 7,
+        "remaining": 5
+      },
+      "trigger_memory": {
+        "used": 8,
+        "capacity": 38,
+        "remaining": 30
+      },
+      "expected_data_tx_triggers_per_matrix": 20
+    },
+    "Node3": {
+      "tx_buffer": {
+        "used": 3,
+        "capacity": 11,
+        "remaining": 8
+      },
+      "rx_std_filter": {
+        "used": 3,
+        "capacity": 11,
+        "remaining": 8
+      },
+      "rx_ext_filter": {
+        "used": 1,
+        "capacity": 10,
+        "remaining": 9
+      },
+      "trigger_memory": {
+        "used": 4,
+        "capacity": 25,
+        "remaining": 21
+      },
+      "expected_data_tx_triggers_per_matrix": 13
+    }
+  },
+  "timing_model": "Static Level 1 reservation model; no bus arbitration or clock synchronization simulation",
+  "hardware_export": false,
+  "units": {
+    "time": "NTU",
+    "ntu_ns": 2000
+  }
+}

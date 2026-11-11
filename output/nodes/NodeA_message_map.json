@@ -1,0 +1,50 @@
+[
+  {
+    "message_name": "Msg7",
+    "can_id": "0x107",
+    "direction": "tx",
+    "resource_type": "tx_buffer",
+    "mnr": 7,
+    "peer": "NodeB"
+  },
+  {
+    "message_name": "Msg3",
+    "can_id": "0x103",
+    "direction": "rx",
+    "resource_type": "rx_std_filter",
+    "mnr": 3,
+    "peer": "NodeB"
+  },
+  {
+    "message_name": "Msg2",
+    "can_id": "0x102",
+    "direction": "tx",
+    "resource_type": "tx_buffer",
+    "mnr": 2,
+    "peer": "NodeB"
+  },
+  {
+    "message_name": "Msg4",
+    "can_id": "0x104",
+    "direction": "tx",
+    "resource_type": "tx_buffer",
+    "mnr": 4,
+    "peer": "NodeB"
+  },
+  {
+    "message_name": "Msg5",
+    "can_id": "0x105",
+    "direction": "rx",
+    "resource_type": "rx_std_filter",
+    "mnr": 5,
+    "peer": "NodeB"
+  },
+  {
+    "message_name": "Msg6",
+    "can_id": "0x106",
+    "direction": "rx",
+    "resource_type": "rx_std_filter",
+    "mnr": 6,
+    "peer": "NodeB"
+  }
+]

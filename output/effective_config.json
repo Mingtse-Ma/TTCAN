@@ -1,0 +1,289 @@
+{
+  "schema_version": 1,
+  "metadata": {
+    "source": "Historical NodeA example with a previously derived NodeB companion; not an original Bosch NodeB table",
+    "assumptions": [
+      "CAN identifiers and numeric time marks are supplemental demonstration values",
+      "NodeA Rx3 Cycle Code is explicitly corrected from 0b1000000 to 0b1000001 for the runnable companion example",
+      "Every scheduled Single opportunity assumes the host rearms its pending request in time",
+      "Arbitration candidates are reservations, not a deterministic bus trace"
+    ]
+  },
+  "network": {
+    "resource_mode": "custom",
+    "level": 1,
+    "bitrate": 1000000,
+    "ntu_ns": 1000,
+    "basic_cycle_ntu": 2000,
+    "matrix_cycles": 64,
+    "expand_matrices": 1,
+    "actual_master": "NodeA",
+    "tx_enable_ntu": 4,
+    "guard_ntu": 10,
+    "filter_delay_ntu": 5,
+    "min_trigger_spacing_ntu": 1,
+    "time_marks": {
+      "T0": 200,
+      "Mark1": 400,
+      "Mark2": 600,
+      "T23": 800,
+      "Mark3": 1000,
+      "T34": 1200,
+      "Mark4": 1400,
+      "Mark5": 1600,
+      "Mark6": 1998,
+      "Mark7": 2300
+    },
+    "reference": {
+      "can_id": "0x080",
+      "frame_format": "standard",
+      "dlc": 1,
+      "tx_mark_ntu": 1998,
+      "watch_mark_ntu": 2300,
+      "unstuffed_bits": 55,
+      "stuffing_bound_bits": 11,
+      "reserved_bits": 66,
+      "frame_time_ntu": 66
+    },
+    "gap": {
+      "enabled": false
+    }
+  },
+  "nodes": [
+    {
+      "node_id": "NodeA",
+      "node_name": "NodeA",
+      "role": "master",
+      "master_priority": 0,
+      "tx_message_capacity": 8,
+      "rx_std_filter_capacity": 8,
+      "rx_ext_filter_capacity": 0,
+      "trigger_capacity": 16
+    },
+    {
+      "node_id": "NodeB",
+      "node_name": "NodeB",
+      "role": "slave",
+      "tx_message_capacity": 4,
+      "rx_std_filter_capacity": 4,
+      "rx_ext_filter_capacity": 0,
+      "trigger_capacity": 16
+    }
+  ],
+  "messages": [
+    {
+      "name": "Msg7",
+      "can_id": "0x107",
+      "frame_format": "standard",
+      "dlc": 8,
+      "sender": "NodeA",
+      "tx_mnr": 7,
+      "receivers": [
+        {
+          "node_id": "NodeB",
+          "filter_mnr": 0,
+          "rx_checks": [
+            {
+              "time_mark": "Mark2",
+              "cycle_code": "0b0000100"
+            },
+            {
+              "time_mark": "Mark2",
+              "cycle_code": "0b1000011"
+            }
+          ]
+        }
+      ],
+      "transmissions": [
+        {
+          "trigger_type": "single",
+          "time_mark": 400,
+          "cycle_code": "0b0000100",
+          "window_length_ntu": 160,
+          "period_cycles": 4,
+          "phase": 0
+        },
+        {
+          "trigger_type": "single",
+          "time_mark": 400,
+          "cycle_code": "0b1000011",
+          "window_length_ntu": 160,
+          "period_cycles": 64,
+          "phase": 3
+        }
+      ],
+      "unstuffed_bits": 111,
+      "stuffing_bound_bits": 25,
+      "reserved_bits": 136,
+      "frame_time_ntu": 136
+    },
+    {
+      "name": "Msg3",
+      "can_id": "0x103",
+      "frame_format": "standard",
+      "dlc": 8,
+      "sender": "NodeB",
+      "tx_mnr": 0,
+      "receivers": [
+        {
+          "node_id": "NodeA",
+          "filter_mnr": 3,
+          "rx_checks": [
+            {
+              "time_mark": "Mark1",
+              "cycle_code": "0b1000001"
+            }
+          ]
+        }
+      ],
+      "transmissions": [
+        {
+          "trigger_type": "single",
+          "time_mark": 200,
+          "cycle_code": "0b1000001",
+          "window_length_ntu": 160,
+          "period_cycles": 64,
+          "phase": 1
+        }
+      ],
+      "unstuffed_bits": 111,
+      "stuffing_bound_bits": 25,
+      "reserved_bits": 136,
+      "frame_time_ntu": 136
+    },
+    {
+      "name": "Msg2",
+      "can_id": "0x102",
+      "frame_format": "standard",
+      "dlc": 8,
+      "sender": "NodeA",
+      "tx_mnr": 2,
+      "receivers": [
+        {
+          "node_id": "NodeB",
+          "filter_mnr": 1,
+          "rx_checks": []
+        }
+      ],
+      "transmissions": [
+        {
+          "trigger_type": "merged",
+          "time_mark": 1000,
+          "cycle_code": "0b1000001",
+          "group_id": "Merge1",
+          "period_cycles": 64,
+          "phase": 1
+        }
+      ],
+      "unstuffed_bits": 111,
+      "stuffing_bound_bits": 25,
+      "reserved_bits": 136,
+      "frame_time_ntu": 136
+    },
+    {
+      "name": "Msg4",
+      "can_id": "0x104",
+      "frame_format": "standard",
+      "dlc": 8,
+      "sender": "NodeA",
+      "tx_mnr": 4,
+      "receivers": [
+        {
+          "node_id": "NodeB",
+          "filter_mnr": 2,
+          "rx_checks": []
+        }
+      ],
+      "transmissions": [
+        {
+          "trigger_type": "arbi",
+          "time_mark": 1400,
+          "cycle_code": "0b1000001",
+          "group_id": "Merge1",
+          "period_cycles": 64,
+          "phase": 1
+        }
+      ],
+      "unstuffed_bits": 111,
+      "stuffing_bound_bits": 25,
+      "reserved_bits": 136,
+      "frame_time_ntu": 136
+    },
+    {
+      "name": "Msg5",
+      "can_id": "0x105",
+      "frame_format": "standard",
+      "dlc": 8,
+      "sender": "NodeB",
+      "tx_mnr": 1,
+      "receivers": [
+        {
+          "node_id": "NodeA",
+          "filter_mnr": 5,
+          "rx_checks": [
+            {
+              "time_mark": "Mark3",
+              "cycle_code": "0b1000011"
+            }
+          ]
+        }
+      ],
+      "transmissions": [
+        {
+          "trigger_type": "single",
+          "time_mark": 800,
+          "cycle_code": "0b1000011",
+          "window_length_ntu": 160,
+          "period_cycles": 64,
+          "phase": 3
+        }
+      ],
+      "unstuffed_bits": 111,
+      "stuffing_bound_bits": 25,
+      "reserved_bits": 136,
+      "frame_time_ntu": 136
+    },
+    {
+      "name": "Msg6",
+      "can_id": "0x106",
+      "frame_format": "standard",
+      "dlc": 8,
+      "sender": "NodeB",
+      "tx_mnr": 2,
+      "receivers": [
+        {
+          "node_id": "NodeA",
+          "filter_mnr": 6,
+          "rx_checks": [
+            {
+              "time_mark": "Mark4",
+              "cycle_code": "0b1000100"
+            }
+          ]
+        }
+      ],
+      "transmissions": [
+        {
+          "trigger_type": "single",
+          "time_mark": 1200,
+          "cycle_code": "0b1000100",
+          "window_length_ntu": 160,
+          "period_cycles": 64,
+          "phase": 4
+        }
+      ],
+      "unstuffed_bits": 111,
+      "stuffing_bound_bits": 25,
+      "reserved_bits": 136,
+      "frame_time_ntu": 136
+    }
+  ],
+  "arbitration_groups": [
+    {
+      "group_id": "Merge1",
+      "kind": "merged",
+      "start_ntu": "Mark3",
+      "end_ntu": "Mark5"
+    }
+  ]
+}
